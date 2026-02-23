@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wishlistz Helpdesk - Customer Search</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="customers.css">
+  <link rel="stylesheet" href="styleBot.css">
+
+</head>
+
+<body>
+
+  <!-- ===================== SIDEBAR (s1 only) ===================== -->
+  <aside class="sidebar">
+    <div class="sidebar-top">
+      <div class="brand">
+        <div class="logo-circle">
+          <img src="Wishlistz_Small_Logo.jpeg" alt="Wishlistz Logo">
+        </div>
+        <span class="brand-text">
+          <a href="https://wishlistz.in/" target="_blank" style="color:white; text-decoration:none;">Wishlistz</a>
+        </span>
+      </div>
+    </div>
+
+    <hr class="sidebar-divider">
+
+    <ul class="sidebar-menu">
+      <li><a href="#" id="assignedLink">📋 Assigned Tickets</a></li>
+      <li><a href="#" id="reportsLink">📊 Reports</a></li>
+      <li><a href="#" id="emailSectionLink">📩 Email Customers</a></li>
+      <li class="sidebar-item">
+  <a href="#" id="signoutLink" class="sidebar-link">Sign Out</a>
+</li>
+
+    </ul>
+  </aside>
+
+  <!-- Hamburger -->
+  <button class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <!-- ===================== MAIN CONTENT ===================== -->
+  <main class="sidebar-open">
+
+    <!-- Header styled same as calendar -->
+    <header class="calendar-header">
+      <h1>Customer Search</h1>
+      <p>Search and view registered customers</p>
+    </header>
+
+    <section class="customer-search-section">
+      <input 
+        type="text"
+        id="customerSearchInput"
+        placeholder="Search by name, email or phone..."
+        class="customer-search-input"
+      >
+      <div id="customerResults" class="customer-results-grid"></div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER (unchanged) ===================== -->
+  <footer class="footer-bar">
+    <a href="index.html" class="footer-icon">
+      <span class="icon">🏠</span><p>Home</p>
+    </a>
+    <a href="services.html" class="footer-icon">
+      <span class="icon">🛠️</span><p>Services</p>
+    </a>
+    <a href="orders.html" class="footer-icon">
+      <span class="icon">📦</span><p>Orders</p>
+    </a>
+    <a href="notifications.html" class="footer-icon">
+      <span class="icon">🔔</span><p>Notifications</p>
+    </a>
+    <a href="customers.html" class="footer-icon active">
+      <span class="icon">👤</span><p>Customer</p>
+    </a>
+    <a href="calendar.html" class="footer-icon">
+      <span class="icon">📅</span><p>Calendar</p>
+    </a>
+  </footer>
+
+  <!-- ===================== POPUPS (s1 enabled) ===================== -->
+
+  <!-- ================= ASSIGNED TICKETS POPUP ================= -->
+<div id="assignedBackdrop" class="popup-backdrop" style="display:none;">
+  <div class="popup">
+    <h2>📋 Assigned Tickets</h2>
+
+    <table class="assigned-table">
+      <thead>
+        <tr>
+          <th>Order ID</th>
+          <th>Send To</th>
+          <th>Subject</th>
+          <th>Message</th>
+          <th>Priority</th>
+          <th>Ticket ID</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+  <td>#1023</td>
+  <td>john.doe@example.com</td>
+  <td>Refund Follow-up</td>
+  <td>Customer requested refund update</td>
+  <td>Medium</td>
+  <td>TCK-201</td>
+  <td>
+    <select class="status-dropdown">
+      <option value="Open" selected>Open</option>
+      <option value="Pending">Pending</option>
+      <option value="Closed">Closed</option>
+      <option value="Resolved">Resolved</option>
+    </select>
+  </td>
+  <td><button class="resolve-btn">Resolve</button></td>
+</tr>
+
+        <tr>
+          <td>#1045</td>
+          <td>priya.sharma@example.com</td>
+          <td>Replacement Request</td>
+          <td>Damaged product replacement</td>
+          <td>High</td>
+          <td>TCK-202</td>
+          <td>
+    <select class="status-dropdown">
+      <option value="Open" selected>Open</option>
+      <option value="Pending">Pending</option>
+      <option value="Closed">Closed</option>
+      <option value="Resolved">Resolved</option>
+    </select>
+  </td>
+          <td><button class="resolve-btn">Resolve</button></td>
+        </tr>
+        <tr>
+          <td>#1078</td>
+          <td>rahul.patil@example.com</td>
+          <td>Delivery Delay</td>
+          <td>Order delayed due to logistics</td>
+          <td>Low</td>
+          <td>TCK-203</td>
+          <td>
+    <select class="status-dropdown">
+      <option value="Open" selected>Open</option>
+      <option value="Pending">Pending</option>
+      <option value="Closed">Closed</option>
+      <option value="Resolved">Resolved</option>
+    </select>
+  </td>
+          <td><button class="resolve-btn">Resolve</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button id="closeAssigned">Close</button>
+  </div>
+</div>
+
+
+  <!-- Reports Popup -->
+  <div class="popup-backdrop" id="reportsBackdrop"></div>
+  <div class="popup-modal" id="reportsModal">
+    <span class="popup-close" id="reportsClose">&times;</span>
+    <h3>Weekly Reports</h3>
+    <ul>
+      <li>Week 1: Jan 12 - Jan 18, 2026 <a href="report_week1.pdf" download><button>Download</button></a></li>
+      <li>Week 2: Jan 19 - Jan 25, 2026 <a href="report_week2.pdf" download><button>Download</button></a></li>
+      <li>Week 3: Jan 26 - Feb 1, 2026 <a href="report_week3.pdf" download><button>Download</button></a></li>
+      <li>Week 4: Feb 2 - Feb 8, 2026 <a href="report_week4.pdf" download><button>Download</button></a></li>
+      <li>Week 5: Feb 9 - Feb 15, 2026 <a href="report_week5.pdf" download><button>Download</button></a></li>
+    </ul>
+  </div>
+
+  <!-- Email Customers Popup -->
+  <div class="popup-backdrop" id="emailBackdrop"></div>
+  <div class="popup-modal" id="emailModal">
+    <span class="popup-close" id="emailClose">&times;</span>
+    <h3>Send Email to Customer</h3>
+    <form id="emailForm">
+      <label>To:</label>
+      <input type="email" id="emailTo" placeholder="Enter customer email" required>
+
+      <label>Common Issues:</label>
+      <select id="issueDropdown">
+        <option value="">-- Select an issue --</option>
+        <option value="Respected Sir/Madam,\n\nWe are pleased to inform you that your payment has been successfully processed. Thank you for your continued trust in Wishlistz.\n\nWith regards,\nWishlistz Support Team">Payment Issue</option>
+        <option value="Respected Sir/Madam,\n\nYour order has been dispatched and is currently on its way. We sincerely appreciate your patience and assure you that it will be delivered soon.\n\nWith regards,\nWishlistz Support Team">Delivery Delay</option>
+        <option value="Respected Sir/Madam,\n\nWe would like to inform you that your refund request has been processed and the amount will reflect in your account shortly. We appreciate your understanding and cooperation.\n\nWith regards,\nWishlistz Support Team">Refund Status</option>
+      </select>
+
+      <label>Message:</label>
+      <textarea id="emailMessage" rows="6" placeholder="Type your message..." required></textarea>
+
+      <button type="submit">Send Email</button>
+    </form>
+  </div>
+  <!-- Sign Out Popup -->
+<div id="signoutPopup" class="popup-overlay hidden">
+  <div class="popup-box">
+    <h2>Are you sure you want to sign out?</h2>
+    <div class="popup-actions">
+      <button id="confirmSignout" class="popup-btn yes">Yes</button>
+      <button id="cancelSignout" class="popup-btn no">No</button>
+    </div>
+  </div>
+</div>
+
+
+  <!-- ================= CHATBOT ================= -->
+<div id="chatbot-container">
+
+  <!-- Minimized button -->
+  <div id="minimizedChat" class="minimized-chat">
+    <div class="minimized-logo">
+      <img src="Wishlistz_Small_Logo.jpeg" alt="Wishlistz Logo">
+    </div>
+    <span class="minimized-text">Chat with us</span>
+  </div>
+
+  <!-- Chat Window -->
+  <div class="chat-container hidden" id="chatWindow">
+
+    <!-- Header -->
+    <div class="chat-header">
+      <div class="header-content">
+        <div class="bot-avatar">
+          <img src="Wishlistz_Small_Logo.jpeg" alt="Wishlistz Logo">
+        </div>
+        <div class="header-info">
+          <h1 class="bot-name">Wishlistz</h1>
+          <span class="status">
+            <span class="status-dot"></span>
+            Online
+          </span>
+        </div>
+        <button id="themeToggle" class="theme-toggle">🌓</button>
+        <button id="minimizeChatBtn" class="minimize-toggle">—</button>
+      </div>
+    </div>
+
+    <!-- Messages -->
+    <div class="chat-messages" id="chatMessages">
+      <div class="message bot-message">
+        <div class="message-content">
+          <p>Welcome to Wishlistz 👋</p>
+          <span class="message-time">Just now</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Input -->
+    <div class="chat-input-container">
+      <div class="input-wrapper">
+        <input type="file" id="fileInput" class="file-input" hidden>
+        <button id="attachButton" class="attach-button">📎</button>
+        <input type="text" id="messageInput" class="message-input" placeholder="Type your message…">
+        <button id="sendButton" class="send-button">➤</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- ===================== SCRIPTS ===================== -->
+  <script src="customers.js"></script>
+  <script src="appBot.js"></script>
+
+
+</body>
+</html>

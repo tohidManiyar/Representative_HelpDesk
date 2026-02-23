@@ -1,0 +1,482 @@
+/* ===================== GLOBAL ===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #eef2f7, #f8f9fc);
+  min-height: 100vh;
+  color: #2b2d42;
+  overflow-x: hidden;
+}
+
+/* ===================== SIDEBAR ===================== */
+.sidebar {
+  width: 230px;
+  height: 100vh;
+  background: linear-gradient(180deg, #1e1f2f, #141522);
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 30px 20px;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  box-shadow: 8px 0 30px rgba(0,0,0,0.25);
+  z-index: 2000;
+}
+
+.sidebar.closed {
+  transform: translateX(-100%);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.brand-text a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+}
+
+.sidebar-divider {
+  border: none;
+  height: 1px;
+  background: rgba(255,255,255,0.15);
+  margin: 18px 0;
+}
+
+.sidebar-menu {
+  list-style: none;
+}
+
+.sidebar-menu li {
+  margin: 10px 0;
+}
+
+.sidebar-menu li a {
+  color: #edf2f4;
+  text-decoration: none;
+  padding: 12px 15px;
+  display: block;
+  border-radius: 10px;
+  transition: all 0.25s ease;
+  font-size: 14px;
+}
+
+.sidebar-menu li a:hover {
+  background: rgba(255,255,255,0.12);
+  transform: translateX(6px);
+}
+
+/* =/* ==================== HAMBURGER ===================== */
+.hamburger {
+  position: fixed;
+  top: 22px;
+  left: 22px;
+  width: 32px;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  z-index: 3000;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 100%;
+  border-radius: 3px;
+  background: #6C3BFF;              /* purple when closed */
+  transition: all 0.3s ease;
+}
+
+.hamburger.open span {
+  background: #ffffff;              /* white when sidebar is open */
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+
+/* ===================== MAIN ===================== */
+main {
+  padding: 50px 40px;
+  transition: margin-left 0.4s ease;
+}
+
+main.sidebar-open {
+  margin-left: 250px;
+}
+
+/* Overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 6000;
+}
+
+/* Hidden state */
+.hidden {
+  display: none;
+}
+
+/* Popup box */
+.popup-box {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 320px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+.popup-box h2 {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.popup-actions {
+  display: flex;
+  justify-content: space-around;
+}
+
+.popup-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.popup-btn.yes {
+  background: #ff4b2b;
+  color: #fff;
+}
+
+.popup-btn.no {
+  background: #ccc;
+  color: #333;
+}
+
+.popup-btn:hover {
+  opacity: 0.9;
+}
+
+/* ===================== HEADER ===================== */
+header {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: white;
+  padding: 30px 35px;
+  border-radius: 18px;
+  margin-bottom: 40px;
+  box-shadow: 0 12px 30px rgba(255, 75, 43, 0.3);
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+#chatbot-container {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+}
+
+/* Avatar and minimized logo circles */
+.bot-avatar,
+.minimized-logo {
+  background: #fff;        /* white circle background */
+  border-radius: 50%;      /* perfect circle */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;        /* ensures image stays inside circle */
+}
+
+/* Logo image inside the circle */
+.bot-avatar img,
+.minimized-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;     /* keeps logo proportions */
+}
+
+
+/* ===================== CARDS ===================== */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  padding-bottom: 120px;
+}
+
+.calendar-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.07);
+  transition: all 0.3s ease;
+  min-height: 150px;
+  position: relative;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+.calendar-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, transparent, rgba(255,75,43,0.05));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.calendar-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.15);
+  border: 1px solid #ff4b2b;
+}
+
+/* ===================== POPUP SYSTEM ===================== */
+.popup-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  background: rgba(0,0,0,0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5000;
+}
+
+.popup {
+  background: rgba(255,255,255,0.95);
+  width: 920px;
+  max-width: 150%;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.25);
+  animation: popupFade 0.25s ease;
+}
+
+@keyframes popupFade {
+  from { transform: scale(0.92); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+
+
+/* ===================== ASSIGNED TICKETS TABLE ===================== */
+.assigned-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.assigned-table th,
+.assigned-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.assigned-table th {
+  background: #f1f3f8;
+  font-weight: 600;
+  color: #2b2d42;
+}
+
+.assigned-table tr:nth-child(even) {
+  background: #fafafa;
+}
+
+.assigned-table tr:hover {
+  background: #f5f7fa;
+}
+
+/* Resolve button */
+.resolve-btn {
+  background: #ff4b2b;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.resolve-btn:hover {
+  background: #e63e1f;
+  transform: scale(1.05);
+}
+
+.status-dropdown {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.status-dropdown:focus {
+  outline: none;
+  border-color: #ff4b2b;
+  box-shadow: 0 0 0 2px rgba(255,75,43,0.2);
+}
+
+
+/* ===================== BUTTONS ===================== */
+.popup button,
+.download-btn {
+  background: #ff4b2b;
+  color: white;
+  border: none;
+  padding: 9px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.popup button:hover,
+.download-btn:hover {
+  transform: scale(1.07);
+  box-shadow: 0 6px 15px rgba(255, 123, 0, 0.4);
+}
+
+/* ===================== EMAIL FORM ===================== */
+#emailForm {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+#emailForm input,
+#emailForm select,
+#emailForm textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #dcdfe6;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+#emailForm input:focus,
+#emailForm select:focus,
+#emailForm textarea:focus {
+  outline: none;
+  border-color: #ff4b2b;
+  box-shadow: 0 0 0 3px rgba(255,75,43,0.15);
+}
+
+#emailForm textarea {
+  resize: none;
+}
+
+/* ===================== FOOTER ===================== */
+.footer-bar {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(8px);
+  padding: 10px 30px;
+  display: flex;
+  gap: 60px;
+  border-radius: 30px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  z-index: 2000;
+}
+
+.footer-bar .footer-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 13px;
+  color: #2b2d42;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 8px 16px;
+  border-radius: 16px;
+}
+
+.footer-bar .footer-icon:hover {
+  color: #ff4b2b;
+  transform: translateY(-3px);
+}
+
+.footer-bar .footer-icon.active {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: #fff;
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width: 768px) {
+  main {
+    padding: 25px;
+    margin-left: 0 !important;
+  }
+
+  .sidebar {
+    width: 210px;
+  }
+
+  .popup {
+    width: 95%;
+    padding: 25px;
+  }
+
+  .footer-bar {
+    gap: 30px;
+    padding: 8px 20px;
+  }
+}

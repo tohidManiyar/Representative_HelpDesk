@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wishlistz Helpdesk - Orders</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Global Styles -->
+  <link rel="stylesheet" href="../style.css">
+  <!-- Orders Page Styles -->
+  <link rel="stylesheet" href="orders.css">
+  <link rel="stylesheet" href="styleBot.css">
+</head>
+
+<body>
+
+  <!-- ===================== SIDEBAR (s1 with popups) ===================== -->
+  <aside class="sidebar">
+    <div class="sidebar-top">
+      <div class="brand">
+        <div class="logo-circle">
+          <img src="Wishlistz_Small_Logo.jpeg" alt="Wishlistz Logo">
+        </div>
+        <span class="brand-text">
+          <a href="https://wishlistz.in/" target="_blank" style="color:white; text-decoration:none;">Wishlistz</a>
+        </span>
+      </div>
+    </div>
+
+    <hr class="sidebar-divider">
+
+    <ul class="sidebar-menu">
+        <li><a href="#" id="assignedTicketsLink">📋 Assigned Tickets</a></li>
+        <li><a href="#" id="reportsLink">📊 Reports</a></li>
+        <li><a href="#" id="emailSectionLink">📩 Email Customers</a></li>
+        <li class="sidebar-item">
+          <a href="#" id="signoutLink" class="sidebar-link">Sign Out</a>
+        </li>
+      </ul>
+    </aside>
+
+  <!-- ===================== HAMBURGER ===================== -->
+  <button class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <!-- ===================== MAIN CONTENT ===================== -->
+  <main class="sidebar-open">
+
+    <!-- Orders Header -->
+    <header class="orders-header">
+      <h1>Order Management Dashboard</h1>
+      <p>Monitor and resolve customer order activities</p>
+    </header>
+
+    <!-- ===================== ORDER SEARCH BAR ===================== -->
+    <section class="order-search-section">
+      <input
+        type="text"
+        id="orderSearchInput"
+        placeholder="Search by Order ID, Customer Name, Product..."
+        class="order-search-input"
+      >
+    </section>
+
+    <!-- ===================== ORDERS GRID ===================== -->
+      <section
+        class="orders-section orders-grid"
+        id="ordersContainer"
+      ></section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer-bar">
+      <a href="index.html" class="footer-icon">
+        <span class="icon">🏠</span><p>Home</p>
+      </a>
+      <a href="services.html" class="footer-icon">
+        <span class="icon">🛠️</span><p>Services</p>
+      </a>
+      <a href="orders.html" class="footer-icon active">
+        <span class="icon">📦</span><p>Orders</p>
+      </a>
+      <a href="notifications.html" class="footer-icon">
+        <span class="icon">🔔</span><p>Notifications</p>
+      </a>
+      <a href="customers.html" class="footer-icon">
+        <span class="icon">👤</span><p>Customer</p>
+      </a>
+      <a href="calendar.html" class="footer-icon">
+        <span class="icon">📅</span><p>Calendar</p>
+      </a>
+    </footer>
+  </main>
+
+  <!-- ===================== POPUPS (s1 enabled) ===================== -->
+
+  <!-- Assigned Tickets Popup -->
+<div class="popup-backdrop" id="assignedBackdrop"></div>
+<div class="popup-modal" id="assignedModal">
+  <span class="popup-close" id="assignedClose">&times;</span>
+  <h3>📋 Assigned Tickets</h3>
+
+  <table class="assigned-table">
+    <thead>
+      <tr>
+        <th>Order ID</th>
+        <th>Send To</th>
+        <th>Subject</th>
+        <th>Message</th>
+        <th>Priority</th>
+        <th>Ticket ID</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>#1023</td>
+        <td>john.doe@example.com</td>
+        <td>Refund Follow-up</td>
+        <td>Customer requested refund update</td>
+        <td>Medium</td>
+        <td>TCK-201</td>
+        <td>
+          <select class="status-dropdown">
+            <option selected>Open</option>
+            <option>Pending</option>
+            <option>Closed</option>
+            <option>Resolved</option>
+          </select>
+        </td>
+        <td><button class="resolve-btn">Resolve</button></td>
+      </tr>
+      <tr>
+        <td>#1045</td>
+        <td>priya.sharma@example.com</td>
+        <td>Replacement Request</td>
+        <td>Damaged product replacement</td>
+        <td>High</td>
+        <td>TCK-202</td>
+        <td>
+          <select class="status-dropdown">
+            <option selected>Open</option>
+            <option>Pending</option>
+            <option>Closed</option>
+            <option>Resolved</option>
+          </select>
+        </td>
+        <td><button class="resolve-btn">Resolve</button></td>
+      </tr>
+      <tr>
+        <td>#1078</td>
+        <td>rahul.patil@example.com</td>
+        <td>Delivery Delay</td>
+        <td>Order delayed due to logistics</td>
+        <td>Low</td>
+        <td>TCK-203</td>
+        <td>
+          <select class="status-dropdown">
+            <option selected>Open</option>
+            <option>Pending</option>
+            <option>Closed</option>
+            <option>Resolved</option>
+          </select>
+        </td>
+        <td><button class="resolve-btn">Resolve</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+    <button id="closeAssigned">Close</button>
+  
+</div>
+
+  <!-- Reports Popup -->
+  <div class="popup-backdrop" id="reportsBackdrop"></div>
+  <div class="popup-modal" id="reportsModal">
+    <span class="popup-close" id="reportsClose">&times;</span>
+    <h3>Weekly Reports</h3>
+    <ul>
+      <li>Week 1: Jan 12 - Jan 18, 2026 <a href="report_week1.pdf" download><button>Download</button></a></li>
+      <li>Week 2: Jan 19 - Jan 25, 2026 <a href="report_week2.pdf" download><button>Download</button></a></li>
+      <li>Week 3: Jan 26 - Feb 1, 2026 <a href="report_week3.pdf" download><button>Download</button></a></li>
+      <li>Week 4: Feb 2 - Feb 8, 2026 <a href="report_week4.pdf" download><button>Download</button></a></li>
+      <li>Week 5: Feb 9 - Feb 15, 2026 <a href="report_week5.pdf" download><button>Download</button></a></li>
+    </ul>
+  </div>
+
+  <!-- Email Customers Popup -->
+  <div class="popup-backdrop" id="emailBackdrop"></div>
+  <div class="popup-modal" id="emailModal">
+    <span class="popup-close" id="emailClose">&times;</span>
+    <h3>Send Email to Customer</h3>
+    <form id="emailForm">
+      <label>To:</label>
+      <input type="email" id="emailTo" placeholder="Enter customer email" required>
+
+      <label>Common Issues:</label>
+      <select id="issueDropdown">
+        <option value="">-- Select an issue --</option>
+        <option value="Respected Sir/Madam,\n\nWe are pleased to inform you that your payment has been successfully processed. Thank you for your continued trust in Wishlistz.\n\nWith regards,\nWishlistz Support Team">Payment Issue</option>
+        <option value="Respected Sir/Madam,\n\nYour order has been dispatched and is currently on its way. We sincerely appreciate your patience and assure you that it will be delivered soon.\n\nWith regards,\nWishlistz Support Team">Delivery Delay</option>
+        <option value="Respected Sir/Madam,\n\nWe would like to inform you that your refund request has been processed and the amount will reflect in your account shortly. We appreciate your understanding and cooperation.\n\nWith regards,\nWishlistz Support Team">Refund Status</option>
+      </select>
+
+      <label>Message:</label>
+      <textarea id="emailMessage" rows="6" placeholder="Type your message..." required></textarea>
+
+      <button type="submit">Send Email</button>
+    </form>
+  </div>
+
+  <!-- Sign Out Popup -->
+<div id="signoutPopup" class="popup-overlay hidden">
+  <div class="popup-box">
+    <h2>Are you sure you want to sign out?</h2>
+    <div class="popup-actions">
+      <button id="confirmSignout" class="popup-btn yes">Yes</button>
+      <button id="cancelSignout" class="popup-btn no">No</button>
+    </div>
+  </div>
+</div>
+
+
+  <!-- ================= CHATBOT ================= -->
+<div id="chatbot-container">
+
+  <!-- Minimized button -->
+  <div id="minimizedChat" class="minimized-chat">
+    <div class="minimized-logo">
+      <img src="Wishlistz_Small_Logo.jpeg" alt="Wishlistz Logo">
+    </div>
+    <span class="minimized-text">Chat with us</span>
+  </div>
+
+  <!-- Chat Window -->
+  <div class="chat-container hidden" id="chatWindow">
+
+    <!-- Header -->
+    <div class="chat-header">
+      <div class="header-content">
+        <div class="bot-avatar">
+          <img src="Wishlistz_Small_Logo.jpeg" alt="Wishlistz Logo">
+        </div>
+        <div class="header-info">
+          <h1 class="bot-name">Wishlistz</h1>
+          <span class="status">
+            <span class="status-dot"></span>
+            Online
+          </span>
+        </div>
+        <button id="themeToggle" class="theme-toggle">🌓</button>
+        <button id="minimizeChatBtn" class="minimize-toggle">—</button>
+      </div>
+    </div>
+
+    <!-- Messages -->
+    <div class="chat-messages" id="chatMessages">
+      <div class="message bot-message">
+        <div class="message-content">
+          <p>Welcome to Wishlistz 👋</p>
+          <span class="message-time">Just now</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Input -->
+    <div class="chat-input-container">
+      <div class="input-wrapper">
+        <input type="file" id="fileInput" class="file-input" hidden>
+        <button id="attachButton" class="attach-button">📎</button>
+        <input type="text" id="messageInput" class="message-input" placeholder="Type your message…">
+        <button id="sendButton" class="send-button">➤</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- ===================== SCRIPTS ===================== -->
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* ===================== SIDEBAR TOGGLE ===================== */
+  const hamburger = document.getElementById("hamburger");
+  const sidebar = document.querySelector(".sidebar");
+  const mainContent = document.querySelector("main");
+
+  if (hamburger && sidebar && mainContent) {
+    hamburger.addEventListener("click", () => {
+      sidebar.classList.toggle("closed");
+      hamburger.classList.toggle("open");
+      mainContent.classList.toggle("sidebar-open");
+    });
+  }
+
+  /* ===================== POPUP HANDLERS ===================== */
+  function setupPopup(linkId, backdropId, modalId, closeId) {
+    const link = document.getElementById(linkId);
+    const backdrop = document.getElementById(backdropId);
+    const modal = document.getElementById(modalId);
+    const closeBtn = document.getElementById(closeId);
+
+    if (link && backdrop && modal && closeBtn) {
+      link.addEventListener("click", (e) => {
+        e.preventDefault();
+        backdrop.classList.add("active");
+        modal.classList.add("active");
+      });
+
+      closeBtn.addEventListener("click", () => {
+        backdrop.classList.remove("active");
+        modal.classList.remove("active");
+      });
+
+      backdrop.addEventListener("click", () => {
+        backdrop.classList.remove("active");
+        modal.classList.remove("active");
+      });
+    }
+  }
+
+  setupPopup("assignedTicketsLink","assignedBackdrop","assignedModal","assignedClose");
+  setupPopup("reportsLink","reportsBackdrop","reportsModal","reportsClose");
+  setupPopup("emailSectionLink","emailBackdrop","emailModal","emailClose");
+
+  /* ===================== ORDERS SECTION (SAFE VERSION) ===================== */
+  const ordersContainer = document.getElementById("ordersContainer");
+  const orderSearchInput = document.getElementById("orderSearchInput");
+
+  // 🔥 If this page does NOT have ordersContainer → stop here
+  if (!ordersContainer) return;
+
+  let orders = [];
+
+  async function loadOrders() {
+    try {
+      const response = await fetch("orders.csv");
+
+      if (!response.ok) {
+        throw new Error("orders.csv not found");
+      }
+
+      const csvText = await response.text();
+      const rows = csvText.split("\n").slice(1);
+
+      orders = rows
+        .filter(row => row.trim() !== "")
+        .map(row => {
+          const cols = row.split(",");
+
+          return {
+            orderId: cols[0],
+            status: cols[1],
+            product: cols[2],
+            customerName: cols[3],
+            orderDate: cols[4],
+            orderTime: cols[5],
+            paymentMethod: cols[6],
+            orderAmount: cols[7],
+            deliveryAddress: cols[8],
+            assignedRepresentative: cols[9],
+            priority: cols[10],
+          };
+        });
+
+      displayOrders(orders);
+
+    } catch (error) {
+      console.error("Error loading orders:", error);
+    }
+  }
+
+  function displayOrders(list) {
+    ordersContainer.innerHTML = "";
+
+    list.forEach(order => {
+
+      const statusClass =
+        order.status === "Delivered" ? "delivered" :
+        order.status === "In Transit" ? "transit" :
+        order.status === "Pending" ? "pending" :
+        "cancelled";
+
+      const card = document.createElement("div");
+      card.className = "order-card";
+
+      card.innerHTML = `
+        <div class="order-top">
+          <h3>Order ID: #${order.orderId}</h3>
+          <span class="status ${statusClass}">${order.status}</span>
+        </div>
+        <div class="order-details">
+          <p><b>Product:</b> ${order.product}</p>
+          <p><b>Customer Name:</b> ${order.customerName}</p>
+          <p><b>Order Date:</b> ${order.orderDate}</p>
+          <p><b>Order Time:</b> ${order.orderTime}</p>
+          <p><b>Payment Method:</b> ${order.paymentMethod}</p>
+          <p><b>Order Amount:</b> ₹${order.orderAmount}</p>
+          <p><b>Delivery Address:</b> ${order.deliveryAddress}</p>
+          <p><b>Assigned Representative:</b> ${order.assignedRepresentative}</p>
+          <p><b>Priority:</b> ${order.priority}</p>
+        </div>
+      `;
+
+      ordersContainer.appendChild(card);
+    });
+  }
+
+  /* ===================== SEARCH FUNCTION ===================== */
+  if (orderSearchInput) {
+    orderSearchInput.addEventListener("input", function () {
+      const value = this.value.toLowerCase();
+
+      const filtered = orders.filter(order =>
+        order.orderId?.toString().includes(value) ||
+        order.customerName?.toLowerCase().includes(value) ||
+        order.product?.toLowerCase().includes(value)
+      );
+
+      displayOrders(filtered);
+    });
+  }
+
+  loadOrders();
+});
+
+
+/* ===================== SIGNOUT ===================== */
+document.addEventListener("DOMContentLoaded", function () {
+  const signoutLink = document.getElementById("signoutLink");
+  const signoutPopup = document.getElementById("signoutPopup");
+  const confirmSignout = document.getElementById("confirmSignout");
+  const cancelSignout = document.getElementById("cancelSignout");
+
+  if (signoutLink && signoutPopup) {
+    signoutLink.addEventListener("click", (e) => {
+      e.preventDefault();
+      signoutPopup.classList.remove("hidden");
+    });
+  }
+
+  if (cancelSignout && signoutPopup) {
+    cancelSignout.addEventListener("click", () => {
+      signoutPopup.classList.add("hidden");
+    });
+  }
+
+  if (confirmSignout) {
+    confirmSignout.addEventListener("click", () => {
+      window.location.href = "signout.html";
+    });
+  }
+});
+</script>
+    <script src="appBot.js"></script>
+  </body>
+</html>

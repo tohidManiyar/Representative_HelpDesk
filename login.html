@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wishlistz Representative Login</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+  <!-- Logo -->
+  <div class="logo-container">
+    <img src="Wishlistz_Small_Logo.jpeg" alt="Wishlistz Logo" class="logo">
+  </div>
+
+  <!-- Sign In Form -->
+  <div class="signin-container">
+    <h2>Representative Sign In</h2>
+    <form id="signinForm">
+      <div class="form-group">
+        <label for="email">Email Id</label>
+        <input type="text" id="email" name="email" placeholder="Enter Email ID" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <!-- password hidden while typing -->
+        <input type="password" id="password" name="password" placeholder="Enter Password" required>
+      </div>
+
+      <button type="submit" class="signin-btn">Sign In</button>
+
+      <!-- Register Button -->
+      <p class="register-link">
+        <a href="register.html" class="register-btn">Register</a>
+      </p>
+
+      <!-- Forgot Password -->
+      <p class="forgot-link">
+        <a href="#" id="forgotPasswordLink">Forgot Password?</a>
+      </p>
+    </form>
+  </div>
+
+  <!-- Forgot Password Popup -->
+  <div id="forgotPopup" class="popup-overlay hidden">
+    <div class="popup-box">
+      <h3>Reset Password</h3>
+      <p>Please enter your registered email ID:</p>
+      <input type="email" id="resetEmail" placeholder="Enter Email Address" required>
+      <div class="popup-actions">
+        <button id="sendReset" class="popup-btn">Send Reset Link</button>
+        <button id="cancelReset" class="popup-btn cancel">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom Notification Popup -->
+  <div id="notificationPopup" class="popup-overlay hidden">
+    <div class="popup-box">
+      <h3 id="notificationTitle">Notification</h3>
+      <p id="notificationMessage"></p>
+      <button id="closeNotification" class="popup-btn">OK</button>
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+
+</body>
+</html>

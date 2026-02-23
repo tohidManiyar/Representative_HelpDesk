@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wishlistz Chatbot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="styleBot.css">
+</head>
+<body>
+
+  <!-- ================= CHATBOT ================= -->
+  <div id="chatbot-container">
+
+    <!-- Minimized button -->
+    <div id="minimizedChat" class="minimized-chat">
+      <div class="minimized-logo">W</div>
+      <span class="minimized-text">Chat with us</span>
+    </div>
+
+    <!-- Chat Window -->
+    <div class="chat-container hidden" id="chatWindow">
+
+      <!-- Header -->
+      <div class="chat-header">
+        <div class="header-content">
+          <img src="wishlistz-logo.png" alt="Wishlistz Logo">
+          <div class="header-info">
+            <h1 class="bot-name">Wishlistz</h1>
+            <span class="status">
+              <span class="status-dot"></span>
+              Online
+            </span>
+          </div>
+          <button id="themeToggle" class="theme-toggle">🌓</button>
+          <button id="minimizeChatBtn" class="minimize-toggle">—</button>
+        </div>
+      </div>
+
+      <!-- Messages -->
+      <div class="chat-messages" id="chatMessages">
+        <div class="message bot-message">
+          <div class="message-content">
+            <p>Welcome to Wishlistz 👋</p>
+            <span class="message-time">Just now</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Input -->
+      <div class="chat-input-container">
+        <div class="input-wrapper">
+          <input type="file" id="fileInput" class="file-input" hidden>
+          <button id="attachButton" class="attach-button">📎</button>
+          <input type="text" id="messageInput" class="message-input" placeholder="Type your message…">
+          <button id="sendButton" class="send-button">➤</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="chatbot.js"></script>
+</body>
+</html>

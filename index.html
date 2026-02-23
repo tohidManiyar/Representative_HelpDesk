@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Wishlistz Support Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styleBot.css" />
+  </head>
+
+  <body>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <div class="brand">
+          <div class="logo-circle">
+            <img
+              src="Wishlistz_Small_Logo.jpeg"
+              alt="Wishlistz Logo"
+              class="sidebar-logo"
+            />
+          </div>
+          <span class="brand-text">
+            <a href="https://wishlistz.in/" target="_blank">Wishlistz</a>
+          </span>
+        </div>
+      </div>
+
+      <hr class="sidebar-divider" />
+
+      <ul class="sidebar-menu">
+        <li><a href="#" id="assignedLink">📋 Assigned Tickets</a></li>
+        <li><a href="#" id="reportsLink">📊 Reports</a></li>
+        <li><a href="#" id="emailSectionLink">📩 Email Customers</a></li>
+        <li class="sidebar-item">
+          <a href="#" id="signoutLink" class="sidebar-link">Sign Out</a>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- HAMBURGER -->
+    <button class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- MAIN -->
+    <main class="sidebar-open">
+      <header>
+        <h1>Wishlistz Support Dashboard</h1>
+      </header>
+
+      <!-- MAIN SECTIONS -->
+      <section class="card-grid">
+        <!-- Logged-in Representative Card -->
+        <div class="card representative-details">
+          <h2>👤 Representative Details</h2>
+          <table>
+            <tr>
+              <th>Name</th>
+              <td id="repName"></td>
+            </tr>
+            <tr>
+              <th>Role</th>
+              <td id="repRole"></td>
+            </tr>
+            <tr>
+              <th>ID</th>
+              <td id="repId"></td>
+            </tr>
+            <tr>
+              <th>Email</th>
+              <td id="repEmail"></td>
+            </tr>
+            <tr>
+              <th>Phone</th>
+              <td id="repPhone"></td>
+            </tr>
+            <tr>
+              <th>Shift</th>
+              <td id="repShift"></td>
+            </tr>
+            <tr>
+              <th>Status</th>
+              <td><span class="status-badge status-active">Active</span></td>
+            </tr>
+            <tr>
+              <th>Location</th>
+              <td id="repLocation"></td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Dashboard Statistics -->
+        <div class="card statistics">
+          <h2>📈 Statistics</h2>
+          <div class="stats-grid">
+            <div class="stat-box">
+              <h3>Solved Queries</h3>
+              <p id="solvedQueries">0</p>
+            </div>
+            <div class="stat-box">
+              <h3>Tickets Closed</h3>
+              <p id="ticketsClosed">0</p>
+            </div>
+            <div class="stat-box">
+              <h3>Emails Sent</h3>
+              <p id="emailsSent">0</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Enquiry -->
+        <div class="card quick-enquiry">
+          <h2>⚡ Quick Enquiry</h2>
+          <form id="quickEnquiryForm">
+            <label for="orderId">Order ID:</label>
+            <input
+              type="text"
+              id="orderId"
+              placeholder="Enter Order ID"
+              required
+            />
+
+            <label for="recipient">Send To:</label>
+            <select id="recipient" required>
+              <option value="">Select recipient</option>
+              <option value="manager">Manager</option>
+              <option value="techie">Techie</option>
+              <option value="supportLead">Support Lead</option>
+              <option value="admin">Admin</option>
+            </select>
+
+            <label for="enquirySubject">Subject:</label>
+            <input
+              type="text"
+              id="enquirySubject"
+              placeholder="Enter Subject"
+              required
+            />
+
+            <label for="enquiryMessage">Message:</label>
+            <textarea
+              id="enquiryMessage"
+              rows="3"
+              placeholder="Write your message..."
+              required
+            ></textarea>
+
+            <button type="submit" class="orange-btn">Submit Enquiry</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="footer-bar">
+        <a href="index.html" class="footer-icon active">
+          <span class="icon">🏠</span>
+          <p>Home</p>
+        </a>
+        <a href="services.html" class="footer-icon">
+          <span class="icon">🛠️</span>
+          <p>Services</p>
+        </a>
+        <a href="orders.html" class="footer-icon">
+          <span class="icon">📦</span>
+          <p>Orders</p>
+        </a>
+        <a href="notifications.html" class="footer-icon">
+          <span class="icon">🔔</span>
+          <p>Notifications</p>
+        </a>
+        <a href="customers.html" class="footer-icon">
+          <span class="icon">👥</span>
+          <p>Customers</p>
+        </a>
+        <a href="calendar.html" class="footer-icon">
+          <span class="icon">📅</span>
+          <p>Calendar</p>
+        </a>
+      </footer>
+    </main>
+
+    <!-- POPUPS -->
+    <div id="assignedBackdrop" class="popup-backdrop"></div>
+
+    <div id="assignedModal" class="popup-modal">
+      <div class="popup-content">
+        <span id="assignedClose" class="popup-close">&times;</span>
+
+        <h3>📋 Assigned Tickets</h3>
+
+        <table class="assigned-table">
+          <thead>
+            <tr>
+              <th>Order ID</th>
+              <th>Send To</th>
+              <th>Subject</th>
+              <th>Message</th>
+              <th>Ticket ID</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="assignedTableBody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Reports -->
+    <div class="popup-modal" id="reportsBackdrop">
+      <div class="popup-content" id="reportsModal">
+        <span class="popup-close" id="reportsClose">&times;</span>
+        <h3>📊 Weekly Reports</h3>
+        <ul>
+          <li>
+            Week 1: Jan 12 - Jan 18, 2026
+            <a href="report_week1.pdf" download
+              ><button class="orange-btn">Download</button></a
+            >
+          </li>
+          <li>
+            Week 2: Jan 19 - Jan 25, 2026
+            <a href="report_week2.pdf" download
+              ><button class="orange-btn">Download</button></a
+            >
+          </li>
+          <li>
+            Week 3: Jan 26 - Feb 1, 2026
+            <a href="report_week3.pdf" download
+              ><button class="orange-btn">Download</button></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Email Customers -->
+    <div class="popup-modal" id="emailBackdrop">
+      <div class="popup-content" id="emailModal">
+        <span class="popup-close" id="emailClose">&times;</span>
+        <h3>📩 Email Customers</h3>
+        <form id="emailForm">
+          <label for="customerEmail">Customer Email:</label>
+          <input
+            type="email"
+            id="customerEmail"
+            placeholder="Enter email"
+            required
+          />
+
+          <label for="issueDropdown">Select Common Issue:</label>
+          <select id="issueDropdown">
+            <option value="">-- Select an issue --</option>
+            <option value="login">Login Issue</option>
+            <option value="delay">Order Delay</option>
+            <option value="refund">Refund Request</option>
+          </select>
+
+          <label for="emailMessage">Message:</label>
+          <textarea
+            id="emailMessage"
+            rows="3"
+            placeholder="Write your message..."
+            required
+          ></textarea>
+
+          <button type="submit" class="orange-btn">Send Email</button>
+        </form>
+      </div>
+    </div>
+    <!-- Sign Out Popup -->
+    <div id="signoutPopup" class="popup-overlay hidden">
+      <div class="popup-box">
+        <h2>Are you sure you want to sign out?</h2>
+        <div class="popup-actions">
+          <button id="confirmSignout" class="popup-btn yes">Yes</button>
+          <button id="cancelSignout" class="popup-btn no">No</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= CHATBOT ================= -->
+    <div id="chatbot-container">
+      <!-- Minimized button -->
+      <div id="minimizedChat" class="minimized-chat">
+        <div class="minimized-logo">
+          <img src="Wishlistz_Small_Logo.jpeg" alt="Wishlistz Logo" />
+        </div>
+        <span class="minimized-text">Chat with us</span>
+      </div>
+
+      <!-- Chat Window -->
+      <div class="chat-container hidden" id="chatWindow">
+        <!-- Header -->
+        <div class="chat-header">
+          <div class="header-content">
+            <div class="bot-avatar">
+              <img src="Wishlistz_Small_Logo.jpeg" alt="Wishlistz Logo" />
+            </div>
+            <div class="header-info">
+              <h1 class="bot-name">Wishlistz</h1>
+              <span class="status">
+                <span class="status-dot"></span>
+                Online
+              </span>
+            </div>
+            <button id="themeToggle" class="theme-toggle">🌓</button>
+            <button id="minimizeChatBtn" class="minimize-toggle">—</button>
+          </div>
+        </div>
+
+        <!-- Messages -->
+        <div class="chat-messages" id="chatMessages">
+          <div class="message bot-message">
+            <div class="message-content">
+              <p>Welcome to Wishlistz 👋</p>
+              <span class="message-time">Just now</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Input -->
+        <div class="chat-input-container">
+          <div class="input-wrapper">
+            <input type="file" id="fileInput" class="file-input" hidden />
+            <button id="attachButton" class="attach-button">📎</button>
+            <input
+              type="text"
+              id="messageInput"
+              class="message-input"
+              placeholder="Type your message…"
+            />
+            <button id="sendButton" class="send-button">➤</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+    <script src="appBot.js"></script>
+  </body>
+</html>

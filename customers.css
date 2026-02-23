@@ -1,0 +1,363 @@
+/* ===================== BODY ===================== */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f5f7fa;
+  color: #2b2d42;
+}
+
+/* Avatar and minimized logo circles */
+.bot-avatar,
+.minimized-logo {
+  background: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.bot-avatar img,
+.minimized-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Overlay (Sign Out popup) */
+.popup-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 6000;
+}
+.hidden { display: none; }
+
+.popup-box {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 320px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+.popup-box h2 { font-size: 16px; margin-bottom: 20px; }
+
+.popup-actions { display: flex; justify-content: space-around; }
+.popup-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+.popup-btn.yes { background: #ff4b2b; color: #fff; }
+.popup-btn.no { background: #ccc; color: #333; }
+.popup-btn:hover { opacity: 0.9; }
+
+/* ===================== HEADER ===================== */
+.calendar-header {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: white;
+  padding: 25px 35px;
+  border-radius: 16px;
+  margin-bottom: 40px;
+  box-shadow: 0 10px 25px rgba(255, 75, 43, 0.35);
+  text-align: center;
+}
+.calendar-header h1 { font-size: 28px; font-weight: 700; letter-spacing: 0.5px; }
+.calendar-header p { font-size: 15px; opacity: 0.9; margin-top: 5px; }
+
+/* ===================== SEARCH SECTION ===================== */
+.customer-search-section { max-width: 1000px; margin: auto; }
+.customer-search-input {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  margin-bottom: 25px;
+  outline: none;
+  transition: 0.3s;
+}
+.customer-search-input:focus {
+  border-color: #ff4b2b;
+  box-shadow: 0 0 8px rgba(255,75,43,0.3);
+}
+
+/* ===================== RESULT GRID ===================== */
+.customer-results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding-bottom: 100px;
+}
+.customer-card {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+.customer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.15);
+  border: 1px solid #ff4b2b;
+}
+.customer-card h3 { margin-bottom: 8px; }
+.customer-card p { margin: 4px 0; font-size: 14px; color: #555; }
+
+/* ===================== FOOTER ===================== */
+.footer-bar {
+  position: fixed;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 8px 25px;
+  display: flex;
+  justify-content: center;
+  gap: 2cm;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  z-index: 2000;
+}
+.footer-bar .footer-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  color: #2b2d42;
+  cursor: pointer;
+  transition: transform 0.25s ease, color 0.25s ease;
+  padding: 8px 14px;
+  border-radius: 12px;
+}
+.footer-bar .footer-icon .icon { font-size: 24px; margin-bottom: 3px; }
+.footer-bar .footer-icon p { margin: 0; font-size: 12px; font-weight: 500; }
+.footer-bar .footer-icon:hover { color: #ff4b2b; transform: scale(1.05); }
+.footer-bar .footer-icon.active { background: #ff4b2b; color: #fff; }
+.footer-bar .footer-icon.active .icon { color: #fff; }
+
+/* ===================== POPUPS ===================== */
+.popup-backdrop {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 5999;
+}
+
+/* Assigned Tickets popup box */
+.popup {
+  background: #fff;
+  padding: 25px;
+  width: 90%;
+  max-width: 923px;       /* wide enough for table */
+  border-radius: 12px;
+  max-height: fit-content;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  z-index: 6000;
+  animation: popupFade 0.25s ease;
+  overflow-x: auto;      /* allow horizontal scroll if table is too wide */
+}
+
+@keyframes popupFade {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+
+.popup-backdrop.active { display: flex; }
+
+/* Generic modal (Reports, Email) */
+.popup-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px 22px;      /* reduced padding */
+  width: 90%;
+  max-width: 500px;
+  height: 500px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  z-index: 6000;
+  display: none;
+}
+.popup-modal.active { display: block; }
+
+.popup-modal h3 { margin-bottom: 15px; font-size: 20px; color: #2b2d42; }
+.popup-modal ul { list-style: none; padding: 0; }
+.popup-modal ul li {
+  background: #f1f3f8;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popup-modal ul li button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  background: #ff4b2b;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.popup-modal ul li button:hover { background: #e63e1f; }
+
+.popup-modal form { display: flex; flex-direction: column; gap: 12px; }
+.popup-modal input,
+.popup-modal textarea,
+.popup-modal select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+.popup-modal button {
+  background: #ff4b2b;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.popup-modal button:hover { background: #e63e1f; }
+
+.popup-close {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #ff4b2b;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.popup-close:hover { color: #e63e1f; transform: scale(1.1); }
+
+/* ===================== ASSIGNED TICKETS TABLE ===================== */
+.assigned-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  font-size: 14px;
+}
+.assigned-table th,
+.assigned-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+.assigned-table th {
+  background: #f1f3f8;
+  font-weight: 600;
+  color: #2b2d42;
+}
+.assigned-table tr:nth-child(even) { background: #fafafa; }
+.assigned-table tr:hover { background: #f5f7fa; }
+
+/* Status dropdown */
+.status-dropdown {
+  padding: 6px 10px;
+  border-radius: 6px;
+    border: 1px solid #ccc;
+  font-size: 13px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.status-dropdown:focus {
+  outline: none;
+  border-color: #ff4b2b;
+  box-shadow: 0 0 0 2px rgba(255,75,43,0.2);
+}
+
+/* Resolve button */
+.resolve-btn {
+  background: #ff4b2b;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.resolve-btn:hover {
+  background: #e63e1f;
+  transform: scale(1.05);
+}
+
+/* Close button for Assigned Tickets popup */
+#closeAssigned {
+  margin-top: 20px;
+  background: #ff4b2b;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#closeAssigned:hover {
+  background: #ff4b2b;
+  transform: scale(1.05);
+}
+
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width: 768px) {
+  .customer-results-grid {
+    grid-template-columns: 1fr;
+  }
+  .customer-card {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .calendar-header {
+    text-align: center;
+    padding: 20px;
+  }
+  .popup-modal { max-width: 90%; }
+  .assigned-table th, .assigned-table td {
+    font-size: 12px;
+    padding: 6px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-bar {
+    gap: 1.2cm;
+    padding: 6px 15px;
+    flex-wrap: wrap;
+  }
+  .footer-bar .footer-icon .icon { font-size: 20px; }
+  .footer-bar .footer-icon p { font-size: 11px; }
+  .popup-modal { max-width: 95%; padding: 20px; }
+  .assigned-table th, .assigned-table td {
+    font-size: 11px;
+    padding: 5px;
+  }
+}
+

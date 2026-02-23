@@ -1,0 +1,21 @@
+orderId,status,product,customerName,orderDate,orderTime,paymentMethod,orderAmount,deliveryAddress,assignedRepresentative,priority
+1026,Cancelled,Smartwatch,Priya Sharma,17 Feb 2026,12:00 AM,UPI,4125,H.No. 78 Shastri Nagar Sector A Jaipur Rajasthan – 302016,Tohid,High
+1027,Processing,Gaming Mouse,John Doe,17 Feb 2026,12:00 AM,Cash on Delivery,3408,Flat 204 Silver Heights MG Road Indore Madhya Pradesh – 452001,Simpi,Low
+1028,Processing,Fitness Band,Rahul Patil,13 Feb 2026,12:00 AM,Cash on Delivery,2418,Plot 45 Green Valley Colony Ajmer Road Jaipur Rajasthan – 302024,Tohid,High
+1029,Processing,Gaming Mouse,Rohit Mehta,15 Feb 2026,12:00 AM,Debit Card,3191,H.No. 19 Patel Nagar Civil Lines Dholpur Rajasthan – 328001,Tohid,Low
+1030,Cancelled,Bluetooth Speaker,Priya Sharma,08 Feb 2026,12:00 AM,Debit Card,4407,Flat 302 Lotus Residency Andheri West Mumbai Maharashtra – 400058,Simpi,Medium
+1031,Delivered,Gaming Mouse,Kavya Nair,16 Feb 2026,12:00 AM,Credit Card,2552,Plot 88 Sector 10 Dwarka New Delhi Delhi – 110075,Simpi,High
+1032,Cancelled,Laptop Bag,Pooja Kulkarni,11 Feb 2026,12:00 AM,UPI,1706,H.No. 56 Rajendra Nagar Bareilly Uttar Pradesh – 243001,Karan,Medium
+1033,In Transit,Fitness Band,John Doe,05 Feb 2026,12:00 AM,Cash on Delivery,4008,Flat 5B Lake View Apartments Powai Mumbai Maharashtra – 400076,Rohan,Medium
+1034,Cancelled,Wireless Headphones,Rohit Mehta,11 Feb 2026,12:00 AM,Cash on Delivery,1732,Plot 120 Shyam Vihar Colony Kota Rajasthan – 324007,Karan,Low
+1035,Delivered,Keyboard,Amit Singh,13 Feb 2026,12:00 AM,Credit Card,3015,H.No. 33 Indira Nagar Phase 1 Lucknow Uttar Pradesh – 226016,Tohid,Low
+1036,In Transit,Tablet Cover,Rahul Patil,20 Feb 2026,12:00 AM,Debit Card,3599,Flat 401 Sky Tower Whitefield Bangalore Karnataka – 560066,Simpi,Medium
+1037,Cancelled,USB-C Cable,Priya Sharma,14 Feb 2026,12:00 AM,Debit Card,2973,Plot 72 Shivaji Colony Trimurti Nagar Nagpur Maharashtra – 440022,Karan,Medium
+1038,In Transit,Smartwatch,Sneha Verma,13 Feb 2026,12:00 AM,Debit Card,1392,H.No. 90 Ashok Nagar Udaipur Rajasthan – 313001,Rohan,Medium
+1039,Processing,Power Bank,Rahul Patil,17 Feb 2026,12:00 AM,UPI,2877,Flat 203 Pearl Residency Madhapur Hyderabad Telangana – 500081,Advait,High
+1040,Cancelled,Bluetooth Speaker,Rohit Mehta,04 Feb 2026,12:00 AM,Cash on Delivery,2218,Plot 16 Sector 22 Noida Uttar Pradesh – 201301,Meena,Medium
+1041,Delivered,Tablet Cover,Amit Singh,09 Feb 2026,12:00 AM,Debit Card,1790,H.No. 47 Sardar Patel Colony Navrangpura Ahmedabad Gujarat – 380009,Meena,Medium
+1042,Cancelled,Power Bank,Pooja Kulkarni,06 Feb 2026,12:00 AM,UPI,3242,Flat 6C Sunrise Apartments Anna Nagar Chennai Tamil Nadu – 600040,Rohan,Medium
+1043,Delivered,Fitness Band,Rahul Patil,01 Feb 2026,12:00 AM,Debit Card,2541,Plot 29 Shanti Vihar Colony Bhopal Madhya Pradesh – 462003,Tohid,Medium
+1044,Cancelled,Smartwatch,Priya Sharma,20 Feb 2026,12:00 AM,Cash on Delivery,3115,H.No. 61 Vaishali Nagar Ajmer Rajasthan – 305001,Advait,Low
+1045,In Transit,Power Bank,Pooja Kulkarni,16 Feb 2026,12:00 AM,Credit Card,2363,Flat 301 Ocean Breeze Residency Marine Drive Kochi Kerala – 682031,Simpi,High

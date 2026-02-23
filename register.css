@@ -1,0 +1,186 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Body */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: #eaeaea;
+  padding: 20px;
+}
+
+/* Logo */
+.logo-container {
+  margin-bottom: 15px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+  border: 3px solid #fff;
+}
+
+/* Heavy Card Container */
+.signin-container {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  width: 100%;
+  max-width: 950px; /* wide card */
+  box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+  color: #222;
+  text-align: center;
+  border: 2px solid #ddd;
+}
+
+.signin-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #111;
+}
+
+/* Form Layout */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+/* Form Groups */
+.form-group {
+  flex: 1 1 45%; /* two columns */
+  text-align: left;
+  position: relative;
+}
+
+.form-group.full-width {
+  flex: 1 1 100%; /* for address field */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 2px solid #bbb;
+  outline: none;
+  font-size: 14px;
+  font-weight: 600;
+  background: #fafafa;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #6C3BFF;
+  box-shadow: 0 0 6px rgba(108,59,255,0.4);
+}
+
+/* Address Field */
+.form-group textarea {
+  resize: vertical;
+  min-height: 50px;
+}
+
+/* Buttons */
+.signin-btn {
+  display: inline-block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  background: #6C3BFF;
+  color: #fff;
+}
+
+.signin-btn:hover {
+  background: #5a2fd1;
+  transform: translateY(-2px);
+}
+
+/* Popup Overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Popup Box */
+.popup-box {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  border: 2px solid #ddd;
+}
+
+.popup-box h3 {
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+}
+
+.popup-box p {
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #555;
+}
+
+.popup-btn {
+  background: #6C3BFF;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.popup-btn:hover {
+  background: #5a2fd1;
+}

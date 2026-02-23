@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wishlistz Helpdesk - Calendar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styleBot.css">
+
+  <link rel="stylesheet" href="calendar.css">
+</head>
+
+<body>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-top">
+      <div class="brand">
+        <div class="logo-circle">
+          <img src="Wishlistz_Small_Logo.jpeg" alt="Wishlistz Logo">
+        </div>
+        <span class="brand-text">
+          <a href="https://wishlistz.in/" target="_blank" style="color:white; text-decoration:none;">
+            Wishlistz
+          </a>
+        </span>
+      </div>
+    </div>
+
+    <hr class="sidebar-divider">
+
+    <ul class="sidebar-menu">
+      <li><a href="#" id="assignedLink">📋 Assigned Tickets</a></li>
+      <li><a href="#" id="reportsLink">📊 Reports</a></li>
+      <li><a href="#" id="emailLink">📩 Email Customers</a></li>
+      <li class="sidebar-item">
+  <a href="#" id="signoutLink" class="sidebar-link">Sign Out</a>
+</li>
+
+    </ul>
+  </aside>
+
+  <!-- HAMBURGER -->
+  <button class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <!-- MAIN CONTENT -->
+  <main id="mainContent" class="sidebar-open">
+
+    <header class="calendar-header">
+      <h1>Representative Calendar</h1>
+      <p>Upcoming events, meetings, and major sales</p>
+    </header>
+
+    <section class="calendar-grid">
+      <div class="calendar-card">
+        <h2>📅 Weekly Team Meeting</h2>
+        <p>Date: February 20, 2026</p>
+        <p>Agenda: Ticket backlog review, performance updates, and escalation planning.</p>
+      </div>
+
+      <div class="calendar-card">
+        <h2>💻 Product Training Session</h2>
+        <p>Date: March 5, 2026</p>
+        <p>Topic: New Wishlistz API integration features.</p>
+      </div>
+
+      <div class="calendar-card">
+        <h2>🎉 Big Spring Sale</h2>
+        <p>Starts: March 15, 2026</p>
+        <p>Focus: Electronics and fashion discounts.</p>
+      </div>
+
+      <div class="calendar-card">
+        <h2>📊 Quarterly Performance Review</h2>
+        <p>Date: April 2, 2026</p>
+      </div>
+
+      <div class="calendar-card">
+        <h2>🛍️ Summer Mega Sale</h2>
+        <p>Starts: June 10, 2026</p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-bar">
+      <a href="index.html" class="footer-icon">
+        <span class="icon">🏠</span><p>Home</p>
+      </a>
+      <a href="services.html" class="footer-icon">
+        <span class="icon">🛠️</span><p>Services</p>
+      </a>
+      <a href="orders.html" class="footer-icon">
+        <span class="icon">📦</span><p>Orders</p>
+      </a>
+      <a href="notifications.html" class="footer-icon">
+        <span class="icon">🔔</span><p>Notifications</p>
+      </a>
+      <a href="customers.html" class="footer-icon">
+        <span class="icon">👤</span><p>Customer</p>
+      </a>
+      <a href="calendar.html" class="footer-icon active">
+        <span class="icon">📅</span><p>Calendar</p>
+      </a>
+    </footer>
+
+  </main>
+
+
+  <!-- ================= ASSIGNED TICKETS POPUP ================= -->
+<div id="assignedBackdrop" class="popup-backdrop" style="display:none;">
+  <div class="popup">
+    <h2>📋 Assigned Tickets</h2>
+
+    <table class="assigned-table">
+      <thead>
+        <tr>
+          <th>Order ID</th>
+          <th>Send To</th>
+          <th>Subject</th>
+          <th>Message</th>
+          <th>Priority</th>
+          <th>Ticket ID</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+  <td>#1023</td>
+  <td>john.doe@example.com</td>
+  <td>Refund Follow-up</td>
+  <td>Customer requested refund update</td>
+  <td>Medium</td>
+  <td>TCK-201</td>
+  <td>
+    <select class="status-dropdown">
+      <option value="Open" selected>Open</option>
+      <option value="Pending">Pending</option>
+      <option value="Closed">Closed</option>
+      <option value="Resolved">Resolved</option>
+    </select>
+  </td>
+  <td><button class="resolve-btn">Resolve</button></td>
+</tr>
+
+        <tr>
+          <td>#1045</td>
+          <td>priya.sharma@example.com</td>
+          <td>Replacement Request</td>
+          <td>Damaged product replacement</td>
+          <td>High</td>
+          <td>TCK-202</td>
+          <td>
+    <select class="status-dropdown">
+      <option value="Open" selected>Open</option>
+      <option value="Pending">Pending</option>
+      <option value="Closed">Closed</option>
+      <option value="Resolved">Resolved</option>
+    </select>
+  </td>
+          <td><button class="resolve-btn">Resolve</button></td>
+        </tr>
+        <tr>
+          <td>#1078</td>
+          <td>rahul.patil@example.com</td>
+          <td>Delivery Delay</td>
+          <td>Order delayed due to logistics</td>
+          <td>Low</td>
+          <td>TCK-203</td>
+          <td>
+    <select class="status-dropdown">
+      <option value="Open" selected>Open</option>
+      <option value="Pending">Pending</option>
+      <option value="Closed">Closed</option>
+      <option value="Resolved">Resolved</option>
+    </select>
+  </td>
+          <td><button class="resolve-btn">Resolve</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button id="closeAssigned">Close</button>
+  </div>
+</div>
+
+<!-- ================= REPORTS POPUP ================= -->
+<div id="reportsBackdrop" class="popup-backdrop" style="display:none;">
+  <div class="popup">
+    <h2>📊 Weekly Reports</h2>
+    <ul class="reports-list">
+      <li>Week 1: Jan 5 – Jan 11 <button class="download-btn" data-week="1">Download</button></li>
+      <li>Week 2: Jan 12 – Jan 18 <button class="download-btn" data-week="2">Download</button></li>
+      <li>Week 3: Jan 19 – Jan 25 <button class="download-btn" data-week="3">Download</button></li>
+      <li>Week 4: Jan 26 – Feb 1 <button class="download-btn" data-week="4">Download</button></li>
+      <li>Week 5: Feb 2 – Feb 8 <button class="download-btn" data-week="5">Download</button></li>
+    </ul>
+    <button id="closeReports">Close</button>
+  </div>
+</div>
+
+
+  <!-- ================= EMAIL POPUP ================= -->
+  <div id="emailBackdrop" class="popup-backdrop" style="display:none;">
+    <div class="popup">
+      <h2>📩 Send Email to Customer</h2>
+
+      <form id="emailForm">
+        <input type="email" id="emailTo" placeholder="To (Customer Email)" required>
+        <input type="text" id="emailSubject" placeholder="Subject" required>
+
+        <select id="emailDropdown">
+          <option value="">Select Quick Reply</option>
+          <option value="Dear Customer, your refund has been initiated and will reflect in 5-7 business days.">Refund Initiated</option>
+          <option value="Dear Customer, your replacement request has been approved. You will receive tracking details soon.">Replacement Approved</option>
+          <option value="Dear Customer, we apologize for the delay. Your order is on priority and will be delivered shortly.">Delivery Delay</option>
+        </select>
+
+        <textarea id="emailMessage" rows="6" placeholder="Message"></textarea>
+
+        <button type="submit">Send Email</button>
+        <button type="button" id="closeEmail">Close</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Sign Out Popup -->
+<div id="signoutPopup" class="popup-overlay hidden">
+  <div class="popup-box">
+    <h2>Are you sure you want to sign out?</h2>
+    <div class="popup-actions">
+      <button id="confirmSignout" class="popup-btn yes">Yes</button>
+      <button id="cancelSignout" class="popup-btn no">No</button>
+    </div>
+  </div>
+</div>
+
+
+    <!-- ================= CHATBOT ================= -->
+<div id="chatbot-container">
+
+  <!-- Minimized button -->
+  <div id="minimizedChat" class="minimized-chat">
+    <div class="minimized-logo">
+      <img src="Wishlistz_Small_Logo.jpeg" alt="Wishlistz Logo">
+    </div>
+    <span class="minimized-text">Chat with us</span>
+  </div>
+
+  <!-- Chat Window -->
+  <div class="chat-container hidden" id="chatWindow">
+
+    <!-- Header -->
+    <div class="chat-header">
+      <div class="header-content">
+        <div class="bot-avatar">
+          <img src="Wishlistz_Small_Logo.jpeg" alt="Wishlistz Logo">
+        </div>
+        <div class="header-info">
+          <h1 class="bot-name">Wishlistz</h1>
+          <span class="status">
+            <span class="status-dot"></span>
+            Online
+          </span>
+        </div>
+        <button id="themeToggle" class="theme-toggle">🌓</button>
+        <button id="minimizeChatBtn" class="minimize-toggle">—</button>
+      </div>
+    </div>
+
+    <!-- Messages -->
+    <div class="chat-messages" id="chatMessages">
+      <div class="message bot-message">
+        <div class="message-content">
+          <p>Welcome to Wishlistz 👋</p>
+          <span class="message-time">Just now</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Input -->
+    <div class="chat-input-container">
+      <div class="input-wrapper">
+        <input type="file" id="fileInput" class="file-input" hidden>
+        <button id="attachButton" class="attach-button">📎</button>
+        <input type="text" id="messageInput" class="message-input" placeholder="Type your message…">
+        <button id="sendButton" class="send-button">➤</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="app.js"></script>
+  <script src="calendar.js"></script>
+  <script src="appBot.js"></script>
+
+
+  <!-- Updated Hamburger Logic -->
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const sidebar = document.getElementById("sidebar");
+    const mainContent = document.getElementById("mainContent");
+
+    hamburger.addEventListener("click", function () {
+      sidebar.classList.toggle("closed");
+      mainContent.classList.toggle("sidebar-open");
+      hamburger.classList.toggle("active");
+      hamburger.classList.toggle("shifted");  // for right movement
+    });
+  </script>
+
+
+</body>
+</html>

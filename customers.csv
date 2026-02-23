@@ -1,0 +1,21 @@
+name,email,phone,address,customerType,gender,age,withWishlistYears
+John Doe,johndoe@example.com,9740947211,H.No. 45 Anna Nagar West Chennai Tamil Nadu – 600040,General,Male,43,5 Month
+Priya Sharma,priyasharma@example.com,9953691398,Flat 302 Trimurti Residency Dharampeth Nagpur Maharashtra – 440010,Business,Female,23,3 Year
+Rahul Patil,rahulpatil@example.com,9301820742,Plot 78 Vaishali Nagar Ajmer Road Jaipur Rajasthan – 302021,Business,Male,24,2 Week
+Sneha Verma,snehaverma@example.com,9560445565,Flat 204 Silver Heights Baner Road Pune Maharashtra – 411045,Business,Female,44,1 Year
+Amit Singh,amitsingh@example.com,9590062090,H.No. 22 Green Park Extension South Delhi Delhi – 110016,Business,Male,33,3 Year
+Neha Gupta,nehagupta@example.com,9220847610,Plot 19 Shanti Colony Kothrud Pune Maharashtra – 411038,General,Female,42,1 Year
+Rohit Mehta,rohitmehta@example.com,9610407576,H.No. 56 Shyam Vihar Colony Mansarovar Jaipur Rajasthan – 302020,Business,Male,34,1 Week
+Kavya Nair,kavyanair@example.com,9098567615,Flat 401 Lake View Apartments Whitefield Bangalore Karnataka – 560066,Business,Female,22,5 Year
+Arjun Reddy,arjunreddy@example.com,9899585176,Flat 9B Ocean Residency Andheri East Mumbai Maharashtra – 400069,Business,Male,31,4 Week
+Pooja Kulkarni,poojakulkarni@example.com,9435173780,H.No. 88 Indira Nagar Adyar Chennai Tamil Nadu – 600020,General,Female,24,2 Month
+Vikas Yadav,vikasyadav@example.com,9842123323,Plot 33 Shivaji Colony Trimurti Nagar Nagpur Maharashtra – 440022,Business,Male,26,1 Year
+Anjali Desai,anjalidesai@example.com,9016277789,H.No. 71 Sardar Patel Colony Andheri West Mumbai Maharashtra – 400058,Business,Female,32,5 Week
+Siddharth Jain,siddharthjain@example.com,9970176823,Flat 203 Pearl Residency Madhapur Hyderabad Telangana – 500081,Business,Male,23,1 Month
+Meera Iyer,meeraiyer@example.com,9897681079,Plot 12 Patel Nagar Civil Lines Delhi – 110054,General,Female,42,2 Year
+Kunal Shah,kunalshah@example.com,9160315988,Flat 305 Sunrise Tower Koramangala Bangalore Karnataka – 560034,General,Male,33,1 Week
+Ritika Kapoor,ritikakapoor@example.com,9542068163,H.No. 67 Rajaji Nagar Bangalore Karnataka – 560010,Business,Female,37,2 Year
+Manish Tiwari,manishtiwari@example.com,9284413427,Plot 29 Lake Area Velachery Chennai Tamil Nadu – 600042,Business,Male,28,4 Year
+Divya Bansal,divyabansal@example.com,9259687593,Flat 501 Green Meadows HSR Layout Bangalore Karnataka – 560102,General,Female,27,5 Month
+Harsh Agarwal,harshagarwal@example.com,9702639228,H.No. 14 Shanti Vihar Malad West Mumbai Maharashtra – 400064,General,Male,31,3 Year
+Nikita Rao,nikitarao@example.com,9730108332,Flat 602 Ocean Heights Electronic City Bangalore Karnataka – 560100,Business,Female,22,3 Month

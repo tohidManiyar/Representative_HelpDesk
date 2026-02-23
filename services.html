@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wishlistz Helpdesk - Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Global Styles -->
+  <link rel="stylesheet" href="../style.css">
+  <!-- Services Page Styles -->
+  <link rel="stylesheet" href="services.css">
+  <link rel="stylesheet" href="styleBot.css">
+
+</head>
+
+<body>
+<!-- ===================== HAMBURGER ===================== -->
+<button class="hamburger" aria-label="Toggle Sidebar">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+  <!-- ===================== SIDEBAR (s1 style with popups) ===================== -->
+  <aside class="sidebar">
+    <div class="sidebar-top">
+      <div class="brand">
+        <div class="logo-circle">
+          <img src="Wishlistz_Small_Logo.jpeg" alt="Wishlistz Logo">
+        </div>
+        <span class="brand-text">
+          <a href="https://wishlistz.in/" target="_blank" style="color:white; text-decoration:none;">Wishlistz</a>
+        </span>
+      </div>
+    </div>
+
+    <hr class="sidebar-divider">
+
+    <ul class="sidebar-menu">
+      <li><a href="#" id="assignedLink">📋 Assigned Tickets</a></li>
+      <li><a href="#" id="reportsLink">📊 Reports</a></li>
+      <li><a href="#" id="emailSectionLink">📩 Email Customers</a></li>
+      <li class="sidebar-item">
+  <a href="#" id="signoutLink" class="sidebar-link">Sign Out</a>
+</li>
+
+    </ul>
+  </aside>
+
+  <!-- ===================== MAIN CONTENT ===================== -->
+  <main class="sidebar-open">
+
+    <header class="services-header">
+      <h1>Representative Services</h1>
+      <p>Tools and resources to assist with customer queries</p>
+    </header>
+
+    <!-- ===================== SERVICES GRID ===================== -->
+    <div class="services-grid">
+      <!-- Tickets -->
+      <section class="services-section" id="tickets">
+        <h2>Tickets</h2>
+        <ul>
+          <li data-message="
+            <strong>Create Ticket</strong><br>
+            <form>
+              <label>Customer Name:</label>
+              <input type='text' placeholder='Enter name'><br>
+              <label>Order ID:</label>
+              <input type='text' placeholder='Order #'><br>
+              <label>Issue Type:</label>
+              <select>
+                <option>Delayed Delivery</option>
+                <option>Payment Failure</option>
+                <option>Damaged Product</option>
+                <option>Other</option>
+              </select><br>
+              <textarea placeholder='Describe issue in detail'></textarea><br>
+              <button>Create Ticket</button>
+            </form>
+          ">Create Ticket</li>
+
+          <!-- <li data-message="
+            <strong>Assign Ticket</strong><br>
+            <form>
+              <label>Ticket ID:</label>
+              <input type='text' placeholder='Ticket #'><br><br>
+              <label>Select Agent:</label>
+              <select>
+                <option>Agent A - Orders</option>
+                <option>Agent B - Payments</option>
+                <option>Agent C - Returns</option>
+                <option>Agent D - Escalations</option>
+              </select><br><br>
+              <button>Assign Ticket</button>
+            </form>
+          ">Assign Ticket</li> -->
+
+          <li data-message="
+            <strong>Close Ticket</strong><br>
+            <form>
+              <label>Ticket ID:</label>
+              <input type='text' placeholder='Ticket #'><br><br>
+              <label>Resolution Note:</label><br>
+              <textarea placeholder='Add resolution details'></textarea><br><br>
+              <button>Close Ticket</button>
+            </form>
+          ">Close Ticket</li>
+        </ul>
+      </section>
+
+      <!-- Reports -->
+      <section class="services-section" id="reports">
+        <h2>Reports</h2>
+        <ul>
+          <li data-message="
+            <strong>Stats</strong><br>
+            <p>Daily Overview:</p>
+            <ul>
+              <li>Tickets Opened: 120</li>
+              <li>Tickets Closed: 95</li>
+              <li>Pending Escalations: 15</li>
+              <li>Avg Resolution Time: 3.2h</li>
+              <li>Customer Satisfaction: 92%</li>
+              <li>Refunds Processed: 40</li>
+              <li>New Customers: 25</li>
+            </ul>
+          ">Stats</li>
+
+          <li data-message="
+            <strong>Performance</strong><br>
+            <table style='width:100%; text-align:center; border-collapse:collapse;'>
+              <tr><th>Agent</th><th>Avg Resolution Time</th><th>Satisfaction</th><th>Tickets Closed</th><th>Escalations</th></tr>
+              <tr><td>Agent A</td><td>2h</td><td>4.8/5</td><td>45</td><td>2</td></tr>
+              <tr><td>Agent B</td><td>3.5h</td><td>4.5/5</td><td>38</td><td>5</td></tr>
+              <tr><td>Agent C</td><td>2.2h</td><td>4.7/5</td><td>50</td><td>1</td></tr>
+              <tr><td>Agent D</td><td>4h</td><td>4.3/5</td><td>32</td><td>4</td></tr>
+            </table>
+          ">Performance</li>
+
+          <li data-message="
+            <strong>Feedback</strong><br>
+            <p>Recent Customer Feedback:</p>
+            <blockquote>'Quick refund process, very satisfied.'</blockquote>
+            <blockquote>'Delivery was late but support resolved quickly.'</blockquote>
+            <blockquote>'Agent C was very helpful and polite.'</blockquote>
+            <blockquote>'Agent B needs improvement in response time.'</blockquote>
+          ">Feedback</li>
+        </ul>
+      </section>
+
+      <!-- Training -->
+      <section class="services-section" id="training">
+        <h2>Training</h2>
+        <ul>
+          <li data-message="
+            <strong>Tutorials</strong><br>
+            <ul>
+              <li><button>Watch: Resolving Payment Issues</button></li>
+              <li><button>Watch: Handling Returns</button></li>
+              <li><button>Watch: Escalation Workflow</button></li>
+            </ul>
+          ">Tutorials</li>
+
+          <li data-message="
+            <strong>Best Practices</strong><br>
+            <ul>
+              <li>Always verify order ID before escalation.</li>
+              <li>Maintain polite and professional tone.</li>
+              <li>Document resolution steps clearly.</li>
+            </ul>
+          ">Best Practices</li>
+
+          <li data-message="
+            <strong>Updates</strong><br>
+            <p>Policy Update: Refunds now processed within 5 business days.</p>
+            <p>System Update: New ticket dashboard released.</p>
+          ">Updates</li>
+        </ul>
+      </section>
+      <!-- History -->
+      <section class="services-section" id="history">
+        <h2>History</h2>
+        <ul>
+          <<ul>
+    <li id="pastTicketsLink">Past Tickets</li>
+  </ul>
+
+          <li data-message="
+            <strong>Customer Timeline</strong><br>
+            <p>Customer John Doe:</p>
+            <ul>
+              <li>3 Purchases</li>
+              <li>2 Tickets Raised</li>
+              <li>Last Interaction: Feb 10, 2026</li>
+            </ul>
+          ">Customer Timeline</li>
+        </ul>
+      </section>
+
+      <!-- Knowledge -->
+      <section class="services-section" id="knowledge">
+        <h2>Knowledge</h2>
+        <ul>
+          <li data-message="
+            <strong>FAQs</strong><br>
+            <ul>
+              <li>Q: How do I reset my account password?<br>A: Use the 'Forgot Password' option and follow the secure OTP process.</li>
+              <li>Q: What encryption is used for payment data?<br>A: All transactions are secured with AES-256 encryption and SSL certificates.</li>
+              <li>Q: How can I integrate Wishlistz API with my CRM?<br>A: Refer to the API documentation in the developer portal.</li>
+              <li>Q: How do I escalate unresolved tickets?<br>A: Use the 'Escalation Workflow' guide or escalate directly to a manager.</li>
+              <li>Q: Can customers request GDPR data deletion?<br>A: Yes, through the Privacy Settings page under account options.</li>
+            </ul>
+          ">FAQs</li>
+
+          <li data-message="
+            <strong>Guides</strong><br>
+            <ul>
+              <li><button>Open: Return Process Guide</button></li>
+              <li><button>Open: Payment Troubleshooting Guide</button></li>
+              <li><button>Open: Escalation Workflow Guide</button></li>
+              <li><button>Open: API Integration Guide</button></li>
+            </ul>
+          ">Guides</li>
+
+          <li data-message="
+            <strong>Policies</strong><br>
+            <ul>
+              <li>Return Policy: Items returnable within 7 days.</li>
+              <li>Refund Policy: Refunds processed in 5–7 days.</li>
+              <li>Privacy Policy: Customer data protected and GDPR compliant.</li>
+              <li>Security Policy: Regular audits and penetration testing performed.</li>
+            </ul>
+          ">Policies</li>
+        </ul>
+      </section>
+
+      <!-- Team -->
+      <section class="services-section" id="team">
+        <h2>Team</h2>
+        <ul>
+          <li data-message="
+            <strong>Chat</strong><br>
+            <form>
+              <label>Select Team:</label>
+              <select>
+                <option>Orders Team</option>
+                <option>Payments Team</option>
+                <option>Returns Team</option>
+                <option>Escalations Team</option>
+              </select><br><br>
+              <button>Start Chat</button>
+            </form>
+          ">Chat</li>
+
+          <li data-message="
+            <strong>Notes</strong><br>
+            <form>
+              <label>Ticket ID:</label>
+              <input type='text' placeholder='Ticket #'><br><br>
+              <label>Internal Note:</label><br>
+              <textarea placeholder='Add note for colleagues'></textarea><br><br>
+              <button>Save Note</button>
+            </form>
+          ">Notes</li>
+
+          <li data-message="
+            <strong>Escalation</strong><br>
+            <form>
+              <label>Ticket ID:</label>
+              <input type='text' placeholder='Ticket #'><br><br>
+              <label>Reason for Escalation:</label><br>
+              <textarea placeholder='Explain why escalation is needed'></textarea><br><br>
+              <label>Escalate To:</label>
+              <select>
+                <option>Manager</option>
+                <option>Senior Agent</option>
+                <option>Technical Specialist</option>
+              </select><br><br>
+              <button>Escalate</button>
+            </form>
+          ">Escalation</li>
+        </ul>
+      </section>
+
+      <!-- Performance Tracker -->
+      <section class="services-section" id="performance">
+        <h2>Performance Tracker</h2>
+        <ul>
+          <li data-message="
+            <strong>Ticket Count</strong><br>
+            <p>This Week:</p>
+            <ul>
+              <li>You resolved 45 tickets.</li>
+              <li>Team resolved 320 tickets.</li>
+            </ul>
+          ">Ticket Count</li>
+
+          <li data-message="
+            <strong>Resolution Speed</strong><br>
+            <p>Average Resolution Time:</p>
+            <ul>
+              <li>You: 2.8 hours</li>
+              <li>Team Average: 3.1 hours</li>
+            </ul>
+          ">Resolution Speed</li>
+
+          <li data-message="
+            <strong>Feedback Scores</strong><br>
+            <p>Customer Ratings:</p>
+            <ul>
+              <li>Your rating: 4.7/5 (30 reviews)</li>
+              <li>Team rating: 4.6/5 (250 reviews)</li>
+            </ul>
+          ">Feedback Scores</li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- ===================== POPUP MODAL ===================== -->
+    <div id="popupModal" class="popup-modal">
+      <div class="popup-content">
+        <span id="popupClose" class="popup-close">&times;</span>
+        <h3 id="popupTitle">Action</h3>
+        <div id="popupMessage">Details will appear here.</div>
+      </div>
+    </div>
+
+
+
+    <!-- Sidebar Popups -->
+<!-- Assigned Tickets Popup -->
+<div id="assignedBackdrop" class="popup-backdrop"></div>
+
+<div id="assignedModal" class="popup-modal">
+  <div class="popup-content">
+
+    <span id="assignedClose" class="popup-close">&times;</span>
+
+    <h3>📋 Assigned Tickets</h3>
+
+    <table class="assigned-table">
+      <thead>
+        <tr>
+          <th>Order ID</th>
+          <th>Send To</th>
+          <th>Subject</th>
+          <th>Message</th>
+          <th>Priority</th>
+          <th>Ticket ID</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+
+<tr>
+  <td>#ORD10234</td>
+  <td>orders@wishlistz.in</td>
+  <td>Delayed Delivery</td>
+  <td>Order not delivered after 5 days.</td>
+  <td>High</td>
+  <td>#TCK5671</td>
+  <td>
+    <select class="status-dropdown">
+      <option>Pending</option>
+      <option>In Progress</option>
+      <option>Resolved</option>
+    </select>
+  </td>
+  <td>
+    <button class="resolve-btn">Resolve</button>
+  </td>
+</tr>
+
+<tr>
+  <td>#ORD10278</td>
+  <td>payments@wishlistz.in</td>
+  <td>Payment Failure</td>
+  <td>Payment deducted but no confirmation.</td>
+  <td>Medium</td>
+  <td>#TCK5672</td>
+  <td>
+    <select class="status-dropdown">
+      <option>Pending</option>
+      <option>In Progress</option>
+      <option>Resolved</option>
+    </select>
+  </td>
+  <td>
+    <button class="resolve-btn">Resolve</button>
+  </td>
+</tr>
+
+</tbody>
+    </table>
+
+  </div>
+</div>
+
+    <div id="reportsBackdrop" class="popup-backdrop"></div>
+    <div id="reportsModal" class="popup-modal">
+      <div class="popup-content">
+        <span id="reportsClose" class="popup-close">&times;</span>
+        <h3>Weekly Reports</h3>
+        <ul>
+          <li>Week 1: Jan 12 - Jan 18, 2026 <button>Download</button></li>
+          <li>Week 2: Jan 19 - Jan 25, 2026 <button>Download</button></li>
+          <li>Week 3: Jan 26 - Feb 1, 2026 <button>Download</button></li>
+          <li>Week 4: Feb 2 - Feb 8, 2026 <button>Download</button></li>
+          <li>Week 5: Feb 9 - Feb 15, 2026 <button>Download</button></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="emailBackdrop" class="popup-backdrop"></div>
+    <div id="emailModal" class="popup-modal">
+      <div class="popup-content">
+        <span id="emailClose" class="popup-close">&times;</span>
+        <h3>Send Email to Customer</h3>
+        <form>
+          <label>To:</label>
+          <input type="email" placeholder="Enter customer email"><br><br>
+          <label>Common Issues:</label>
+          <select>
+            <option>Payment Issue</option>
+            <option>Delivery Delay</option>
+            <option>Refund Status</option>
+            <option>Technical Support</option>
+          </select><br><br>
+          <label>Message:</label>
+          <textarea rows="6" placeholder="Type your message..."></textarea><br><br>
+          <button type="submit">Send Email</button>
+        </form>
+      </div>
+    </div>
+<!-- Sign Out Popup -->
+<div id="signoutPopup" class="popup-overlay hidden">
+  <div class="popup-box">
+    <h2>Are you sure you want to sign out?</h2>
+    <div class="popup-actions">
+      <button id="confirmSignout" class="popup-btn yes">Yes</button>
+      <button id="cancelSignout" class="popup-btn no">No</button>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Add spacing before footer -->
+    <div style="height: 60px;"></div>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer-bar">
+    <a href="index.html" class="footer-icon"><span class="icon">🏠</span><p>Home</p></a>
+        <a href="services.html" class="footer-icon active">
+      <span class="icon">🛠️</span><p>Services</p>
+    </a>
+    <a href="orders.html" class="footer-icon">
+      <span class="icon">📦</span><p>Orders</p>
+    </a>
+    <a href="notifications.html" class="footer-icon">
+      <span class="icon">🔔</span><p>Notifications</p>
+    </a>
+    <a href="customers.html" class="footer-icon">
+      <span class="icon">👤</span><p>Customer</p>
+    </a>
+    <a href="calendar.html" class="footer-icon">
+      <span class="icon">📅</span><p>Calendar</p>
+    </a>
+  </footer>
+
+  <!-- Past Tickets Popup -->
+<div id="pastBackdrop" class="popup-backdrop"></div>
+
+<div id="pastModal" class="popup-modal">
+  <div class="popup-content">
+
+    <span id="pastClose" class="popup-close">&times;</span>
+
+    <h3>📜 Past Tickets</h3>
+
+    <table class="assigned-table">
+      <thead>
+        <tr>
+          <th>Order ID</th>
+          <th>Send To</th>
+          <th>Subject</th>
+          <th>Message</th>
+          <th>Priority</th>
+          <th>Ticket ID</th>
+          <th>Status</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+  <td>#ORD10234</td>
+  <td>orders@wishlistz.in</td>
+  <td>Delayed Delivery</td>
+  <td>Order not delivered after 5 days.</td>
+  <td>High</td>
+  <td>#TCK5671</td>
+  <td>
+    <select class="status-dropdown">
+      <option>Pending</option>
+      <option>In Progress</option>
+      <option>Resolved</option>
+    </select>
+  </td>
+  
+</tr>
+
+<tr>
+  <td>#ORD10278</td>
+  <td>payments@wishlistz.in</td>
+  <td>Payment Failure</td>
+  <td>Payment deducted but no confirmation.</td>
+  <td>Medium</td>
+  <td>#TCK5672</td>
+  <td>
+    <select class="status-dropdown">
+      <option>Pending</option>
+      <option>In Progress</option>
+      <option>Resolved</option>
+    </select>
+  </td>
+  
+</tr>
+
+      </tbody>
+    </table>
+
+  </div>
+</div>
+
+    <!-- ================= CHATBOT ================= -->
+<div id="chatbot-container">
+
+  <!-- Minimized button -->
+  <div id="minimizedChat" class="minimized-chat">
+    <div class="minimized-logo">
+      <img src="Wishlistz_Small_Logo.jpeg" alt="Wishlistz Logo">
+    </div>
+    <span class="minimized-text">Chat with us</span>
+  </div>
+
+  <!-- Chat Window -->
+  <div class="chat-container hidden" id="chatWindow">
+
+    <!-- Header -->
+    <div class="chat-header">
+      <div class="header-content">
+        <div class="bot-avatar">
+          <img src="Wishlistz_Small_Logo.jpeg" alt="Wishlistz Logo">
+        </div>
+        <div class="header-info">
+          <h1 class="bot-name">Wishlistz</h1>
+          <span class="status">
+            <span class="status-dot"></span>
+            Online
+          </span>
+        </div>
+        <button id="themeToggle" class="theme-toggle">🌓</button>
+        <button id="minimizeChatBtn" class="minimize-toggle">—</button>
+      </div>
+    </div>
+
+    <!-- Messages -->
+    <div class="chat-messages" id="chatMessages">
+      <div class="message bot-message">
+        <div class="message-content">
+          <p>Welcome to Wishlistz 👋</p>
+          <span class="message-time">Just now</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Input -->
+    <div class="chat-input-container">
+      <div class="input-wrapper">
+        <input type="file" id="fileInput" class="file-input" hidden>
+        <button id="attachButton" class="attach-button">📎</button>
+        <input type="text" id="messageInput" class="message-input" placeholder="Type your message…">
+        <button id="sendButton" class="send-button">➤</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- ===================== SCRIPTS ===================== -->
+  <script src="services.js"></script>
+  <script src="appBot.js"></script>
+</body>
+</html>
