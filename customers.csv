@@ -1,21 +1,132 @@
 name,email,phone,address,customerType,gender,age,withWishlistYears
-John Doe,johndoe@example.com,9740947211,H.No. 45 Anna Nagar West Chennai Tamil Nadu – 600040,General,Male,43,5 Month
-Priya Sharma,priyasharma@example.com,9953691398,Flat 302 Trimurti Residency Dharampeth Nagpur Maharashtra – 440010,Business,Female,23,3 Year
-Rahul Patil,rahulpatil@example.com,9301820742,Plot 78 Vaishali Nagar Ajmer Road Jaipur Rajasthan – 302021,Business,Male,24,2 Week
-Sneha Verma,snehaverma@example.com,9560445565,Flat 204 Silver Heights Baner Road Pune Maharashtra – 411045,Business,Female,44,1 Year
-Amit Singh,amitsingh@example.com,9590062090,H.No. 22 Green Park Extension South Delhi Delhi – 110016,Business,Male,33,3 Year
-Neha Gupta,nehagupta@example.com,9220847610,Plot 19 Shanti Colony Kothrud Pune Maharashtra – 411038,General,Female,42,1 Year
-Rohit Mehta,rohitmehta@example.com,9610407576,H.No. 56 Shyam Vihar Colony Mansarovar Jaipur Rajasthan – 302020,Business,Male,34,1 Week
-Kavya Nair,kavyanair@example.com,9098567615,Flat 401 Lake View Apartments Whitefield Bangalore Karnataka – 560066,Business,Female,22,5 Year
-Arjun Reddy,arjunreddy@example.com,9899585176,Flat 9B Ocean Residency Andheri East Mumbai Maharashtra – 400069,Business,Male,31,4 Week
-Pooja Kulkarni,poojakulkarni@example.com,9435173780,H.No. 88 Indira Nagar Adyar Chennai Tamil Nadu – 600020,General,Female,24,2 Month
-Vikas Yadav,vikasyadav@example.com,9842123323,Plot 33 Shivaji Colony Trimurti Nagar Nagpur Maharashtra – 440022,Business,Male,26,1 Year
-Anjali Desai,anjalidesai@example.com,9016277789,H.No. 71 Sardar Patel Colony Andheri West Mumbai Maharashtra – 400058,Business,Female,32,5 Week
-Siddharth Jain,siddharthjain@example.com,9970176823,Flat 203 Pearl Residency Madhapur Hyderabad Telangana – 500081,Business,Male,23,1 Month
-Meera Iyer,meeraiyer@example.com,9897681079,Plot 12 Patel Nagar Civil Lines Delhi – 110054,General,Female,42,2 Year
-Kunal Shah,kunalshah@example.com,9160315988,Flat 305 Sunrise Tower Koramangala Bangalore Karnataka – 560034,General,Male,33,1 Week
-Ritika Kapoor,ritikakapoor@example.com,9542068163,H.No. 67 Rajaji Nagar Bangalore Karnataka – 560010,Business,Female,37,2 Year
-Manish Tiwari,manishtiwari@example.com,9284413427,Plot 29 Lake Area Velachery Chennai Tamil Nadu – 600042,Business,Male,28,4 Year
-Divya Bansal,divyabansal@example.com,9259687593,Flat 501 Green Meadows HSR Layout Bangalore Karnataka – 560102,General,Female,27,5 Month
-Harsh Agarwal,harshagarwal@example.com,9702639228,H.No. 14 Shanti Vihar Malad West Mumbai Maharashtra – 400064,General,Male,31,3 Year
-Nikita Rao,nikitarao@example.com,9730108332,Flat 602 Ocean Heights Electronic City Bangalore Karnataka – 560100,Business,Female,22,3 Month
+Priya Sharma,priyasharma@gmail.com,9953691398,Flat 302 Trimurti Residency Dharampeth Nagpur Maharashtra – 440010,Business,Female,23,3 Year
+Rahul Patil,rahulpatil@gmail.com,9301820742,Plot 78 Vaishali Nagar Ajmer Road Jaipur Rajasthan – 302021,Business,Male,24,2 Week
+Sneha Verma,snehaverma@gmail.com,9560445565,Flat 204 Silver Heights Baner Road Pune Maharashtra – 411045,Business,Female,44,1 Year
+Amit Singh,amitsingh@gmail.com,9590062090,H.No. 22 Green Park Extension South Delhi Delhi – 110016,Business,Male,33,3 Year
+Neha Gupta,nehagupta@gmail.com,9220847610,Plot 19 Shanti Colony Kothrud Pune Maharashtra – 411038,General,Female,42,1 Year
+Rohit Mehta,rohitmehta@gmail.com,9610407576,H.No. 56 Shyam Vihar Colony Mansarovar Jaipur Rajasthan – 302020,Business,Male,34,1 Week
+Kavya Nair,kavyanair@gmail.com,9098567615,Flat 401 Lake View Apartments Whitefield Bangalore Karnataka – 560066,Business,Female,22,5 Year
+Arjun Reddy,arjunreddy@gmail.com,9899585176,Flat 9B Ocean Residency Andheri East Mumbai Maharashtra – 400069,Business,Male,31,4 Week
+Pooja Kulkarni,poojakulkarni@gmail.com,9435173780,H.No. 88 Indira Nagar Adyar Chennai Tamil Nadu – 600020,General,Female,24,2 Month
+Vikas Yadav,vikasyadav@gmail.com,9842123323,Plot 33 Shivaji Colony Trimurti Nagar Nagpur Maharashtra – 440022,Business,Male,26,1 Year
+Anjali Desai,anjalidesai@gmail.com,9016277789,H.No. 71 Sardar Patel Colony Andheri West Mumbai Maharashtra – 400058,Business,Female,32,5 Week
+Siddharth Jain,siddharthjain@gmail.com,9970176823,Flat 203 Pearl Residency Madhapur Hyderabad Telangana – 500081,Business,Male,23,1 Month
+Meera Iyer,meeraiyer@gmail.com,9897681079,Plot 12 Patel Nagar Civil Lines Delhi – 110054,General,Female,42,2 Year
+Kunal Shah,kunalshah@gmail.com,9160315988,Flat 305 Sunrise Tower Koramangala Bangalore Karnataka – 560034,General,Male,33,1 Week
+Ritika Kapoor,ritikakapoor@gmail.com,9542068163,H.No. 67 Rajaji Nagar Bangalore Karnataka – 560010,Business,Female,37,2 Year
+Manish Tiwari,manishtiwari@gmail.com,9284413427,Plot 29 Lake Area Velachery Chennai Tamil Nadu – 600042,Business,Male,28,4 Year
+Divya Bansal,divyabansal@gmail.com,9259687593,Flat 501 Green Meadows HSR Layout Bangalore Karnataka – 560102,General,Female,27,5 Month
+Harsh Agarwal,harshagarwal@gmail.com,9702639228,H.No. 14 Shanti Vihar Malad West Mumbai Maharashtra – 400064,General,Male,31,3 Year
+Nikita Rao,nikitarao@gmail.com,9730108332,Flat 602 Ocean Heights Electronic City Bangalore Karnataka – 560100,Business,Female,22,3 Month
+Anjali Verma,anjaliverma@gmail.com,9823456712,Flat 12B Shanti Heights Andheri West Mumbai Maharashtra – 400058,Business,Female,26,1 Year
+Rohan Mehta,rohanmehta@gmail.com,9876543210,House 45 Sector 15 Noida Uttar Pradesh – 201301,Business,Male,29,6 Month
+Sneha Kulkarni,snehakulkarni@gmail.com,9765432108,Flat 8 Green Park Colony Kothrud Pune Maharashtra – 411038,Business,Female,24,2 Year
+Amit Deshmukh,amitdeshmukh@gmail.com,9123456780,Plot 21 Shivaji Nagar Civil Lines Nagpur Maharashtra – 440001,Business,Male,31,8 Month
+Neha Singh,nehasingh@gmail.com,9898765432,Flat 203 Sunrise Apartments Indiranagar Bengaluru Karnataka – 560038,Business,Female,22,5 Month
+Karan Malhotra,karanmalhotra@gmail.com,9812345670,House 18 Model Town Ludhiana Punjab – 141002,Business,Male,28,1 Year
+Pooja Nair,poojanair@gmail.com,9345678123,Flat 5C Lake View Residency Powai Mumbai Maharashtra – 400076,Business,Female,27,3 Year
+Vikram Joshi,vikramjoshi@gmail.com,9034567812,Plot 90 Satellite Road Ahmedabad Gujarat – 380015,Business,Male,30,4 Month
+Isha Gupta,ishagupta@gmail.com,9988776655,Flat 404 Silver Oaks Banjara Hills Hyderabad Telangana – 500034,Business,Female,25,2 Week
+Arjun Reddy,arjunreddy@gmail.com,9172836450,House 62 Jubilee Hills Hyderabad Telangana – 500033,Business,Male,32,5 Year
+Meera Iyer,meeraiyer@gmail.com,9845123678,Flat 7 Lotus Enclave Adyar Chennai Tamil Nadu – 600020,Business,Female,23,9 Month
+Siddharth Jain,siddharthjain@gmail.com,9090909090,Plot 11 Malviya Nagar Jaipur Rajasthan – 302017,Business,Male,27,7 Month
+Aarav Khanna,aaravkhanna@gmail.com,9876102345,Flat 14 Crystal Residency Salt Lake Kolkata West Bengal – 700091,Business,Male,28,2 Year
+Diya Kapoor,diyakapoor@gmail.com,9765123490,House 22 Rajouri Garden New Delhi Delhi – 110027,Business,Female,25,8 Month
+Manish Yadav,manishyadav@gmail.com,9811223344,Plot 67 Gomti Nagar Lucknow Uttar Pradesh – 226010,Business,Male,30,1 Year
+Tanvi Shah,tanvishah@gmail.com,9890011223,Flat 9 Riverfront Apartments Vastrapur Ahmedabad Gujarat – 380015,Business,Female,24,6 Month
+Harsh Vardhan,harshvardhan@gmail.com,9345012768,House 88 Alkapuri Vadodara Gujarat – 390007,Business,Male,29,3 Year
+Ritika Bose,ritikabose@gmail.com,9901122334,Flat 3A Park Street Kolkata West Bengal – 700016,Business,Female,27,4 Month
+Aditya Rao,adityarao@gmail.com,9123409876,Flat 202 HSR Layout Bengaluru Karnataka – 560102,Business,Male,26,9 Month
+Kavya Menon,kavyamenon@gmail.com,9988012345,House 16 Panampilly Nagar Kochi Kerala – 682036,Business,Female,31,5 Year
+Nikhil Soni,nikhilsoni@gmail.com,9870012345,Plot 54 Mansarovar Jaipur Rajasthan – 302020,Business,Male,23,1 Week
+Shruti Mishra,shrutimishra@gmail.com,9767001234,Flat 11A Civil Lines Prayagraj Uttar Pradesh – 211001,Business,Female,29,2 Year
+Dev Patel,devpatel@gmail.com,9098123456,House 5 Navrangpura Ahmedabad Gujarat – 380009,Business,Male,32,7 Month
+Ananya Das,ananyadas@gmail.com,9888123456,Flat 6 Green Avenue Guwahati Assam – 781005,Business,Female,24,3 Month
+Mohit Bansal,mohitbansal@gmail.com,9345612345,Plot 21 Sector 62 Noida Uttar Pradesh – 201309,Business,Male,28,10 Month
+Simran Kaur,simrankaur@gmail.com,9877612345,House 44 Sector 35 Chandigarh Chandigarh – 160022,Business,Female,26,1 Year
+Yash Thakur,yashthakur@gmail.com,9765412345,Flat 302 Palasia Indore Madhya Pradesh – 452001,Business,Male,30,2 Year
+Aisha Khan,aishakhan@gmail.com,9812312345,Flat 10B Bandra East Mumbai Maharashtra – 400051,Business,Female,27,6 Month
+Ritesh Agarwal,riteshagarwal@gmail.com,9987612345,House 71 Hazratganj Lucknow Uttar Pradesh – 226001,Business,Male,31,4 Year
+Nehal Choudhary,nehalchoudhary@gmail.com,9345612789,Flat 18 MG Road Vijayawada Andhra Pradesh – 520010,Business,Female,22,5 Month
+Varun Arora,varunarora@gmail.com,9123412789,Plot 29 Rohini Sector 9 New Delhi Delhi – 110085,Business,Male,33,3 Year
+Pallavi Rao,pallavirao@gmail.com,9876512789,Flat 7 Jubilee Hills Hyderabad Telangana – 500033,Business,Female,25,2 Week
+Gaurav Tiwari,gauravtiwari@gmail.com,9765412789,House 12 Shyam Nagar Kanpur Uttar Pradesh – 208013,Business,Male,29,11 Month
+Ishita Roy,ishitaroy@gmail.com,9812312789,Flat 5 Ballygunge Kolkata West Bengal – 700019,Business,Female,28,1 Year
+Kunal Verma,kunalverma@gmail.com,9987612789,Plot 60 Dwarka Sector 12 New Delhi Delhi – 110075,Business,Male,24,6 Month
+Rhea D’Souza,rheadsouza@gmail.com,9345612301,Flat 14 Candolim North Goa Goa – 403515,Business,Female,27,2 Year
+Samarjeet Singh,samarjeet@gmail.com,9876512301,House 9 Model Town Jalandhar Punjab – 144003,Business,Male,30,8 Month
+Lavanya Pillai,lavanyapillai@gmail.com,9765412301,Flat 21 Anna Nagar Chennai Tamil Nadu – 600040,Business,Female,26,3 Year
+Akash Chauhan,akashchauhan@gmail.com,9812312301,Plot 33 Rajendra Nagar Patna Bihar – 800016,Business,Male,28,5 Month
+Mitali Ghosh,mitalighosh@gmail.com,9987612301,Flat 8 Lake Gardens Kolkata West Bengal – 700045,Business,Female,23,7 Month
+Saurabh Kulshreshtha,saurabhkul@gmail.com,9345612390,House 17 Lashkar Gwalior Madhya Pradesh – 474001,Business,Male,31,2 Year
+Bhavya Arvind,bhavyaarvind@gmail.com,9876512390,Flat 2A Whitefield Bengaluru Karnataka – 560066,Business,Female,25,9 Month
+Naman Jain,namanjain@gmail.com,9765412390,Plot 88 Vaishali Ghaziabad Uttar Pradesh – 201010,Business,Male,27,1 Year
+Keerthi Reddy,keerthireddy@gmail.com,9812312390,Flat 16 Kondapur Hyderabad Telangana – 500084,Business,Female,24,4 Month
+Parth Bhatt,parthbhatt@gmail.com,9987612390,House 6 Ellis Bridge Ahmedabad Gujarat – 380006,Business,Male,29,6 Year
+Sana Sheikh,sanasheikh@gmail.com,9345612340,Flat 13 Mira Road Mumbai Maharashtra – 401107,Business,Female,28,3 Month
+Omkar Jadhav,omkarjadhav@gmail.com,9876512340,Plot 55 Karve Nagar Pune Maharashtra – 411052,Business,Male,32,2 Year
+Divya Chatterjee,divyachatterjee@gmail.com,9765412340,Flat 4A Salt Lake Sector 3 Kolkata West Bengal – 700106,Business,Female,26,1 Year
+Abhinav Pandey,abhinavpandey@gmail.com,9812312340,House 19 Alambagh Lucknow Uttar Pradesh – 226005,Business,Male,30,5 Month
+Tanya Malhotra,tanyamalhotra@gmail.com,9987612340,Flat 9 Saket New Delhi Delhi – 110017,Business,Female,27,2 Year
+Rohit Nair,rohitnair@gmail.com,9345612355,Plot 72 Vyttila Kochi Kerala – 682019,Business,Male,29,7 Month
+Swati Kulkarni,swatikulkarni@gmail.com,9876512355,Flat 3 Bavdhan Pune Maharashtra – 411021,Business,Female,24,1 Year
+Krishna Prasad,krishnaprasad@gmail.com,9765412355,House 25 Kankarbagh Patna Bihar – 800020,Business,Male,31,4 Month
+Alisha Thomas,alishathomas@gmail.com,9812312355,Flat 11 Edappally Kochi Kerala – 682024,Business,Female,25,3 Year
+Tejas Pawar,tejaspawar@gmail.com,9987612355,Plot 40 Wakad Pune Maharashtra – 411057,Business,Male,28,6 Month
+Nivedita Sen,niveditasen@gmail.com,9345612366,Flat 7 Tollygunge Kolkata West Bengal – 700033,Business,Female,29,2 Year
+Jay Mehra,jaymehra@gmail.com,9876512366,House 58 Pitampura New Delhi Delhi – 110034,Business,Male,33,8 Year
+Prerna Vyas,prernavyas@gmail.com,9765412366,Flat 12 Paldi Ahmedabad Gujarat – 380007,Business,Female,26,5 Month
+Lakshya Oberoi,lakshyaoberoi@gmail.com,9812312366,Plot 15 Civil Lines Jaipur Rajasthan – 302006,Business,Male,27,9 Month
+Ankita Saha,ankitasaha@gmail.com,9987612366,Flat 10 Howrah Maidan Howrah West Bengal – 711101,Business,Female,23,2 Week
+Raghav Batra,raghavbatra@gmail.com,9345612377,House 30 Sector 10 Faridabad Haryana – 121006,Business,Male,30,1 Year
+Ira Mukherjee,iramukherjee@gmail.com,9876512377,Flat 6 Rajarhat Kolkata West Bengal – 700135,Business,Female,28,4 Year
+Aditi Kulshrestha,aditikulshrestha@gmail.com,9823012456,Flat 21 Tilak Nagar Indore Madhya Pradesh – 452018,Business,Female,26,2 Year
+Rohan Bhatia,rohanbhatia@gmail.com,9712345678,House 14 Sector 21 Gurugram Haryana – 122016,Business,Male,29,7 Month
+Snehal Patankar,snehalpatankar@gmail.com,9898123456,Flat 8 Prabhat Road Deccan Pune Maharashtra – 411004,Business,Female,27,3 Year
+Vivek Sharma,viveksharma@gmail.com,9345012345,Plot 32 Ashok Vihar Phase 2 New Delhi Delhi – 110052,Business,Male,31,1 Year
+Nisha Raut,nisharaut@gmail.com,9767812345,Flat 5 Shankar Nagar Raipur Chhattisgarh – 492001,Business,Female,24,5 Month
+Tarun Saxena,tarunsaxena@gmail.com,9811123456,House 9 Indirapuram Ghaziabad Uttar Pradesh – 201014,Business,Male,28,6 Month
+Ishaan Kapoor,ishaankapoor@gmail.com,9987012345,Flat 12 Versova Andheri West Mumbai Maharashtra – 400061,Business,Male,30,4 Year
+Preeti Yadav,preetiyadav@gmail.com,9345611111,Flat 3 MP Nagar Bhopal Madhya Pradesh – 462011,Business,Female,23,9 Month
+Sahil Arora,sahilarora@gmail.com,9876511111,House 27 Janakpuri New Delhi Delhi – 110058,Business,Male,32,2 Year
+Monika Pillai,monikapillai@gmail.com,9765411111,Flat 16 Kakkanad Kochi Kerala – 682030,Business,Female,25,1 Year
+Ankit Tandon,ankittandon@gmail.com,9812311111,Plot 45 Gomti Nagar Extension Lucknow Uttar Pradesh – 226010,Business,Male,29,11 Month
+Rupal Shah,rupalshah@gmail.com,9987611111,Flat 9 Bodakdev Ahmedabad Gujarat – 380054,Business,Female,27,8 Month
+Hemant Saini,hemantsaini@gmail.com,9345612222,House 33 Vaishali Nagar Ajmer Rajasthan – 305001,Business,Male,34,5 Year
+Shreya Banerjee,shreyabanerjee@gmail.com,9876512222,Flat 6 Dum Dum Kolkata West Bengal – 700028,Business,Female,26,2 Year
+Nitin Malviya,nitinmalviya@gmail.com,9765412222,Plot 11 Vijay Nagar Indore Madhya Pradesh – 452010,Business,Male,28,3 Month
+Rashmi Iyer,rashmiyer@gmail.com,9812312222,Flat 4 Besant Nagar Chennai Tamil Nadu – 600090,Business,Female,30,6 Year
+Kabir Anand,kabiranand@gmail.com,9987612222,House 18 Sector 15 Chandigarh Chandigarh – 160015,Business,Male,27,10 Month
+Megha Khandelwal,meghakhandelwal@gmail.com,9345613333,Flat 2 Civil Lines Kota Rajasthan – 324001,Business,Female,24,4 Month
+Deepak Naidu,deepaknaidu@gmail.com,9876513333,Plot 77 Dwaraka Nagar Visakhapatnam Andhra Pradesh – 530016,Business,Male,31,3 Year
+Sanya Bansal,sanyabansal@gmail.com,9765413333,Flat 14 Lajpat Nagar New Delhi Delhi – 110024,Business,Female,25,1 Year
+Pratik More,pratikmore@gmail.com,9812313333,House 29 Aundh Pune Maharashtra – 411007,Business,Male,29,2 Year
+Nandini Shetty,nandinishetty@gmail.com,9987613333,Flat 5 Malleshwaram Bengaluru Karnataka – 560003,Business,Female,28,7 Month
+Yogesh Parmar,yogeshparmar@gmail.com,9345614444,Plot 21 Maninagar Ahmedabad Gujarat – 380008,Business,Male,32,9 Month
+Anusha Varma,anushavarma@gmail.com,9876514444,Flat 8 Gachibowli Hyderabad Telangana – 500032,Business,Female,26,3 Year
+Lokesh Choudhary,lokeshchoudhary@gmail.com,9765414444,House 12 Shastri Nagar Jodhpur Rajasthan – 342003,Business,Male,30,5 Month
+Ila Dutta,iladutta@gmail.com,9812314444,Flat 10 Lake Town Kolkata West Bengal – 700089,Business,Female,27,2 Year
+Mayank Srivastava,mayanksrivastava@gmail.com,9987614444,Plot 55 Aliganj Lucknow Uttar Pradesh – 226024,Business,Male,33,4 Year
+Pavitra Reddy,pavitrareddy@gmail.com,9345615555,Flat 6 Madhapur Hyderabad Telangana – 500081,Business,Female,24,6 Month
+Aman Grover,amangrover@gmail.com,9876515555,House 44 Sector 8 Faridabad Haryana – 121006,Business,Male,28,1 Year
+Bhavna Joshi,bhavnajoshi@gmail.com,9765415555,Flat 3 Karol Bagh New Delhi Delhi – 110005,Business,Female,29,8 Month
+Suresh Pawar,sureshpawar@gmail.com,9812315555,Plot 90 Kalyani Nagar Pune Maharashtra – 411006,Business,Male,35,7 Year
+Tanya Roy,tanyaroy@gmail.com,9987615555,Flat 7 Park Circus Kolkata West Bengal – 700017,Business,Female,26,1 Year
+Harshit Gupta,harshitgupta@gmail.com,9345616666,House 23 Sector 56 Noida Uttar Pradesh – 201301,Business,Male,31,2 Year
+Leena Fernandes,leenafernandes@gmail.com,9876516666,Flat 5 Panaji North Goa Goa – 403001,Business,Female,28,3 Year
+Chirag Desai,chiragdesai@gmail.com,9765416666,Plot 31 Gotri Vadodara Gujarat – 390021,Business,Male,30,6 Month
+Madhuri Kale,madhurikale@gmail.com,9812316666,Flat 12 Dadar West Mumbai Maharashtra – 400028,Business,Female,27,4 Year
+Rajat Sood,rajatsood@gmail.com,9987616666,House 16 Sector 22 Panchkula Haryana – 134109,Business,Male,29,9 Month
+Soumya Nambiar,soumyanambiar@gmail.com,9345617777,Flat 9 Thrippunithura Kochi Kerala – 682301,Business,Female,25,2 Year
+Keshav Tripathi,keshavtripathi@gmail.com,9876517777,Plot 28 Cantt Varanasi Uttar Pradesh – 221002,Business,Male,34,5 Year
+Poonam Chouhan,poonamchouhan@gmail.com,9765417777,Flat 4 City Center Gwalior Madhya Pradesh – 474011,Business,Female,23,7 Month
+Manav Suri,manavsuri@gmail.com,9812317777,House 19 Greater Kailash New Delhi Delhi – 110048,Business,Male,32,3 Year
+Vidhi Parekh,vidhiparekh@gmail.com,9987617777,Flat 6 CG Road Ahmedabad Gujarat – 380009,Business,Female,26,1 Year
+Ashwin Rao,ashwinrao@gmail.com,9345618888,Plot 45 Hebbal Bengaluru Karnataka – 560024,Business,Male,28,8 Month
+Saloni Mehta,salonimehta@gmail.com,9876518888,Flat 2 Ulsoor Bengaluru Karnataka – 560008,Business,Female,24,6 Month
+Dheeraj Kulkarni,dheerajkulkarni@gmail.com,9765418888,House 27 Nigdi Pune Maharashtra – 411044,Business,Male,30,2 Year
+Komal Arora,komalarora@gmail.com,9812318888,Flat 8 Patel Nagar New Delhi Delhi – 110008,Business,Female,29,4 Year
+Ravi Teja,raviteja@gmail.com,9987618888,Plot 63 LB Nagar Hyderabad Telangana – 500074,Business,Male,31,1 Year
+Anamika Paul,anamikapaul@gmail.com,9345619999,Flat 11 Behala Kolkata West Bengal – 700034,Business,Female,27,3 Year
+Gautam Meena,gautammeena@gmail.com,9876519999,House 22 Malviya Nagar Jaipur Rajasthan – 302017,Business,Male,28,5 Month
+Rekha Subramanian,rekhasubramanian@gmail.com,9765419999,Flat 3 Tambaram Chennai Tamil Nadu – 600045,Business,Female,33,6 Year
