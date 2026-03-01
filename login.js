@@ -38,7 +38,7 @@ sendReset.addEventListener("click", async () => {
 
   try {
     const response = await fetch(
-      "http://localhost:8000/api/user/forgot-password",
+      "https://representative-helpdesk.onrender.com/api/user/forgot-password",
       {
         method: "POST",
         headers: {
@@ -76,7 +76,7 @@ signinForm.addEventListener("submit", async (e) => {
   }
 
   try {
-    const response = await fetch("http://localhost:8000/api/user/login", {
+    const response = await fetch("https://representative-helpdesk.onrender.com/api/user/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
