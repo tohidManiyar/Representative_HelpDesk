@@ -117,7 +117,7 @@ export const forgotPasswordController = async (req, res) => {
       expiresIn: "15m",
     });
 
-    const resetLink = `http://127.0.0.1:3000/WISHLISTZ_SUPPORT_HELP_DESK/forgot.html?token=${resetToken}`;
+    const resetLink = `https://representativehelpdesk.netlify.app/forgot.html?token=${resetToken}`;
 
     // You can modify sendMail function to send link instead of OTP
     await sendResetEmail(email, resetLink);
