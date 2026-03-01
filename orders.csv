@@ -19,3 +19,73 @@ orderId,status,product,customerName,orderDate,orderTime,paymentMethod,orderAmoun
 1043,Delivered,Fitness Band,Rahul Patil,01 Feb 2026,12:00 AM,Debit Card,2541,Plot 29 Shanti Vihar Colony Bhopal Madhya Pradesh – 462003,Tohid,Medium
 1044,Cancelled,Smartwatch,Priya Sharma,20 Feb 2026,12:00 AM,Cash on Delivery,3115,H.No. 61 Vaishali Nagar Ajmer Rajasthan – 305001,Advait,Low
 1045,In Transit,Power Bank,Pooja Kulkarni,16 Feb 2026,12:00 AM,Credit Card,2363,Flat 301 Ocean Breeze Residency Marine Drive Kochi Kerala – 682031,Simpi,High
+1046,Processing,Smartphone Stand,Anjali Verma,21 Feb 2026,12:00 AM,UPI,1899,Flat 12B Shanti Heights Andheri West Mumbai Maharashtra – 400058,Tohid,Medium
+1047,Delivered,Wireless Mouse,Rohan Mehta,18 Feb 2026,12:00 AM,Credit Card,2499,House 45 Sector 15 Noida Uttar Pradesh – 201301,Simpi,Low
+1048,In Transit,Noise Cancelling Headphones,Sneha Kulkarni,19 Feb 2026,12:00 AM,Debit Card,5999,Flat 8 Green Park Colony Kothrud Pune Maharashtra – 411038,Karan,High
+1049,Cancelled,Portable Charger,Amit Deshmukh,22 Feb 2026,12:00 AM,Cash on Delivery,1599,Plot 21 Shivaji Nagar Civil Lines Nagpur Maharashtra – 440001,Rohan,Medium
+1050,Delivered,LED Monitor,Neha Singh,23 Feb 2026,12:00 AM,Credit Card,12499,Flat 203 Sunrise Apartments Indiranagar Bengaluru Karnataka – 560038,Advait,High
+1051,Processing,Gaming Keyboard,Karan Malhotra,20 Feb 2026,12:00 AM,UPI,3499,House 18 Model Town Ludhiana Punjab – 141002,Meena,Medium
+1052,In Transit,Bluetooth Speaker,Pooja Nair,24 Feb 2026,12:00 AM,Debit Card,2799,Flat 5C Lake View Residency Powai Mumbai Maharashtra – 400076,Tohid,Low
+1053,Cancelled,Laptop Stand,Vikram Joshi,18 Feb 2026,12:00 AM,Cash on Delivery,2199,Plot 90 Satellite Road Ahmedabad Gujarat – 380015,Simpi,Medium
+1054,Delivered,Smartwatch,Isha Gupta,25 Feb 2026,12:00 AM,Credit Card,6999,Flat 404 Silver Oaks Banjara Hills Hyderabad Telangana – 500034,Karan,High
+1055,Processing,USB Hub,Arjun Reddy,21 Feb 2026,12:00 AM,UPI,1299,House 62 Jubilee Hills Hyderabad Telangana – 500033,Rohan,Low
+1056,In Transit,Tablet Cover,Meera Iyer,19 Feb 2026,12:00 AM,Debit Card,999,Flat 7 Lotus Enclave Adyar Chennai Tamil Nadu – 600020,Meena,Medium
+1057,Delivered,External Hard Drive,Siddharth Jain,26 Feb 2026,12:00 AM,Credit Card,5499,Plot 11 Malviya Nagar Jaipur Rajasthan – 302017,Advait,High
+1058,Cancelled,Power Bank,Aarav Khanna,20 Feb 2026,12:00 AM,Cash on Delivery,1999,Flat 14 Crystal Residency Salt Lake Kolkata West Bengal – 700091,Tohid,Low
+1059,Processing,Fitness Band,Diya Kapoor,22 Feb 2026,12:00 AM,UPI,2999,House 22 Rajouri Garden New Delhi Delhi – 110027,Simpi,Medium
+1060,Delivered,Gaming Mouse,Manish Yadav,23 Feb 2026,12:00 AM,Debit Card,2599,Plot 67 Gomti Nagar Lucknow Uttar Pradesh – 226010,Karan,Medium
+1061,In Transit,Wireless Earbuds,Tanvi Shah,24 Feb 2026,12:00 AM,Credit Card,4499,Flat 9 Riverfront Apartments Vastrapur Ahmedabad Gujarat – 380015,Rohan,High
+1062,Cancelled,Laptop Bag,Harsh Vardhan,19 Feb 2026,12:00 AM,Cash on Delivery,1799,House 88 Alkapuri Vadodara Gujarat – 390007,Meena,Low
+1063,Delivered,Mechanical Keyboard,Ritika Bose,25 Feb 2026,12:00 AM,Debit Card,4999,Flat 3A Park Street Kolkata West Bengal – 700016,Tohid,High
+1064,Processing,Phone Case,Aditya Rao,18 Feb 2026,12:00 AM,UPI,799,Flat 202 HSR Layout Bengaluru Karnataka – 560102,Simpi,Low
+1065,In Transit,Portable SSD,Kavya Menon,27 Feb 2026,12:00 AM,Credit Card,8999,House 16 Panampilly Nagar Kochi Kerala – 682036,Karan,High
+1066,Delivered,Smartwatch,Nikhil Soni,21 Feb 2026,12:00 AM,Debit Card,7299,Plot 54 Mansarovar Jaipur Rajasthan – 302020,Advait,Medium
+1067,Cancelled,Tablet Stand,Shruti Mishra,22 Feb 2026,12:00 AM,Cash on Delivery,1399,Flat 11A Civil Lines Prayagraj Uttar Pradesh – 211001,Rohan,Low
+1068,Processing,Bluetooth Speaker,Dev Patel,23 Feb 2026,12:00 AM,UPI,3199,House 5 Navrangpura Ahmedabad Gujarat – 380009,Meena,Medium
+1069,Delivered,Wireless Charger,Ananya Das,24 Feb 2026,12:00 AM,Credit Card,2499,Flat 6 Green Avenue Guwahati Assam – 781005,Tohid,Medium
+1070,In Transit,Gaming Headset,Mohit Bansal,25 Feb 2026,12:00 AM,Debit Card,3999,Plot 21 Sector 62 Noida Uttar Pradesh – 201309,Simpi,High
+1071,Cancelled,USB-C Cable,Simran Kaur,18 Feb 2026,12:00 AM,Cash on Delivery,499,House 44 Sector 35 Chandigarh Chandigarh – 160022,Karan,Low
+1072,Delivered,Power Bank,Yash Thakur,26 Feb 2026,12:00 AM,UPI,2299,Flat 302 Palasia Indore Madhya Pradesh – 452001,Rohan,Medium
+1073,Processing,LED Desk Lamp,Aisha Khan,27 Feb 2026,12:00 AM,Credit Card,1899,Flat 10B Bandra East Mumbai Maharashtra – 400051,Advait,Medium
+1074,In Transit,Wireless Keyboard,Ritesh Agarwal,21 Feb 2026,12:00 AM,Debit Card,2899,House 71 Hazratganj Lucknow Uttar Pradesh – 226001,Meena,High
+1075,Delivered,Smartphone Gimbal,Nehal Choudhary,23 Feb 2026,12:00 AM,Credit Card,5999,Flat 18 MG Road Vijayawada Andhra Pradesh – 520010,Tohid,High
+1076,Cancelled,Laptop Cooling Pad,Varun Arora,20 Feb 2026,12:00 AM,Cash on Delivery,1599,Plot 29 Rohini Sector 9 New Delhi Delhi – 110085,Simpi,Low
+1077,Processing,Bluetooth Speaker,Pallavi Rao,24 Feb 2026,12:00 AM,UPI,3499,Flat 7 Jubilee Hills Hyderabad Telangana – 500033,Karan,Medium
+1078,Delivered,Fitness Band,Gaurav Tiwari,25 Feb 2026,12:00 AM,Debit Card,2799,House 12 Shyam Nagar Kanpur Uttar Pradesh – 208013,Rohan,Medium
+1079,In Transit,Portable Monitor,Ishita Roy,26 Feb 2026,12:00 AM,Credit Card,13999,Flat 5 Ballygunge Kolkata West Bengal – 700019,Advait,High
+1080,Cancelled,USB Flash Drive,Kunal Verma,22 Feb 2026,12:00 AM,Cash on Delivery,699,Plot 60 Dwarka Sector 12 New Delhi Delhi – 110075,Meena,Low
+1081,Delivered,Wireless Earbuds,Rhea D’Souza,27 Feb 2026,12:00 AM,Debit Card,4599,Flat 14 Candolim North Goa Goa – 403515,Tohid,Medium
+1082,Processing,Smart Home Plug,Samarjeet Singh,21 Feb 2026,12:00 AM,UPI,1999,House 9 Model Town Jalandhar Punjab – 144003,Simpi,Medium
+1083,In Transit,Mechanical Keyboard,Lavanya Pillai,23 Feb 2026,12:00 AM,Credit Card,5299,Flat 21 Anna Nagar Chennai Tamil Nadu – 600040,Karan,High
+1084,Delivered,Smartwatch,Akash Chauhan,24 Feb 2026,12:00 AM,Debit Card,7499,Plot 33 Rajendra Nagar Patna Bihar – 800016,Rohan,High
+1085,Cancelled,Gaming Mouse,Mitali Ghosh,20 Feb 2026,12:00 AM,Cash on Delivery,2699,Flat 8 Lake Gardens Kolkata West Bengal – 700045,Meena,Low
+1086,Processing,Power Bank,Saurabh Kulshreshtha,22 Feb 2026,12:00 AM,UPI,2399,House 17 Lashkar Gwalior Madhya Pradesh – 474001,Advait,Medium
+1087,Delivered,Bluetooth Speaker,Bhavya Arvind,25 Feb 2026,12:00 AM,Credit Card,3299,Flat 2A Whitefield Bengaluru Karnataka – 560066,Tohid,Medium
+1088,In Transit,External SSD,Naman Jain,26 Feb 2026,12:00 AM,Debit Card,9999,Plot 88 Vaishali Ghaziabad Uttar Pradesh – 201010,Simpi,High
+1089,Cancelled,Wireless Mouse,Keerthi Reddy,21 Feb 2026,12:00 AM,Cash on Delivery,2199,Flat 16 Kondapur Hyderabad Telangana – 500084,Karan,Low
+1090,Delivered,Smartphone Stand,Parth Bhatt,27 Feb 2026,12:00 AM,Credit Card,1299,House 6 Ellis Bridge Ahmedabad Gujarat – 380006,Rohan,Low
+1091,Processing,Noise Cancelling Headphones,Sana Sheikh,24 Feb 2026,12:00 AM,UPI,7999,Flat 13 Mira Road Mumbai Maharashtra – 401107,Meena,High
+1092,In Transit,Laptop Backpack,Omkar Jadhav,23 Feb 2026,12:00 AM,Debit Card,3499,Plot 55 Karve Nagar Pune Maharashtra – 411052,Advait,Medium
+1093,Delivered,Wireless Charger,Divya Chatterjee,26 Feb 2026,12:00 AM,Credit Card,2599,Flat 4A Salt Lake Sector 3 Kolkata West Bengal – 700106,Tohid,Medium
+1094,Cancelled,USB Hub,Abhinav Pandey,22 Feb 2026,12:00 AM,Cash on Delivery,1499,House 19 Alambagh Lucknow Uttar Pradesh – 226005,Simpi,Low
+1095,Processing,Smart LED Bulb,Tanya Malhotra,27 Feb 2026,12:00 AM,UPI,899,Flat 9 Saket New Delhi Delhi – 110017,Karan,Medium
+1096,Delivered,Wireless Mouse,Arjun Malhotra,28 Feb 2026,12:00 AM,Credit Card,2399,Flat 22 Sector 7 Rohini New Delhi Delhi – 110085,Tohid,Low
+1097,Processing,Smartwatch,Neha Kapoor,28 Feb 2026,12:00 AM,UPI,7499,House 14 Kharadi Pune Maharashtra – 411014,Simpi,High
+1098,In Transit,Bluetooth Speaker,Rahul Verma,28 Feb 2026,12:00 AM,Debit Card,2899,Plot 9 Raj Nagar Ghaziabad Uttar Pradesh – 201002,Karan,Medium
+1099,Cancelled,Power Bank,Sanya Mehta,28 Feb 2026,12:00 AM,Cash on Delivery,1999,Flat 5 Andheri East Mumbai Maharashtra – 400069,Rohan,Low
+1100,Delivered,Gaming Keyboard,Vikrant Singh,28 Feb 2026,12:00 AM,Credit Card,4599,House 48 Civil Lines Jaipur Rajasthan – 302006,Advait,High
+1101,Processing,USB-C Cable,Ankita Sharma,01 Mar 2026,12:00 AM,UPI,599,Flat 18 Wakad Pune Maharashtra – 411057,Meena,Low
+1102,In Transit,Noise Cancelling Headphones,Rohit Bansal,01 Mar 2026,12:00 AM,Debit Card,8999,Plot 77 Indiranagar Bengaluru Karnataka – 560038,Tohid,High
+1103,Delivered,Laptop Bag,Priyanshi Jain,01 Mar 2026,12:00 AM,Credit Card,2199,House 90 Navrangpura Ahmedabad Gujarat – 380009,Simpi,Medium
+1104,Cancelled,Tablet Cover,Aman Yadav,01 Mar 2026,12:00 AM,Cash on Delivery,999,Flat 2 Gomti Nagar Lucknow Uttar Pradesh – 226010,Karan,Low
+1105,Processing,Wireless Earbuds,Isha Sharma,01 Mar 2026,12:00 AM,UPI,4999,Plot 31 Banjara Hills Hyderabad Telangana – 500034,Rohan,High
+1106,Delivered,External Hard Drive,Kabir Khan,02 Mar 2026,12:00 AM,Credit Card,6499,Flat 11 Salt Lake Kolkata West Bengal – 700091,Advait,Medium
+1107,In Transit,Smart LED Bulb,Ritika Soni,02 Mar 2026,12:00 AM,Debit Card,799,House 55 Sector 21 Chandigarh Chandigarh – 160022,Meena,Low
+1108,Cancelled,Gaming Mouse,Harsh Patel,02 Mar 2026,12:00 AM,Cash on Delivery,2599,Plot 62 Maninagar Ahmedabad Gujarat – 380008,Tohid,Medium
+1109,Delivered,Portable SSD,Megha Nair,02 Mar 2026,12:00 AM,Credit Card,10499,Flat 6 Panampilly Nagar Kochi Kerala – 682036,Simpi,High
+1110,Processing,Wireless Charger,Dev Sharma,02 Mar 2026,12:00 AM,UPI,2799,House 73 Aliganj Lucknow Uttar Pradesh – 226024,Karan,Medium
+1111,In Transit,Mechanical Keyboard,Sneha Reddy,03 Mar 2026,12:00 AM,Debit Card,5299,Flat 9 Whitefield Bengaluru Karnataka – 560066,Rohan,High
+1112,Delivered,Smartphone Stand,Raj Malhotra,03 Mar 2026,12:00 AM,Credit Card,1399,Plot 44 Sector 10 Dwarka New Delhi Delhi – 110075,Advait,Low
+1113,Cancelled,Power Bank,Anjali Das,03 Mar 2026,12:00 AM,Cash on Delivery,1899,Flat 3 Ballygunge Kolkata West Bengal – 700019,Meena,Low
+1114,Processing,Bluetooth Speaker,Kunal Arora,03 Mar 2026,12:00 AM,UPI,3399,House 12 Dadar West Mumbai Maharashtra – 400028,Tohid,Medium
+1115,Delivered,Fitness Band,Pooja Verma,03 Mar 2026,12:00 AM,Credit Card,3099,Plot 28 Civil Lines Nagpur Maharashtra – 440001,Simpi,Medium
