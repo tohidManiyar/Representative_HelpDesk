@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!token) return [];
 
     try {
-      const response = await fetch("https://representative-helpdesk.onrender.com/api/enquiry/user", {
+      const response = await fetch("https://representative-helpdesk-3alv.onrender.com/api/enquiry/user", {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -329,7 +329,7 @@ You are logged in as a ${found.type} customer.`;
 
       try {
         const response = await fetch(
-          "https://representative-helpdesk.onrender.com/api/enquiry/stats",
+          "https://representative-helpdesk-3alv.onrender.com/api/enquiry/stats",
           {
             method: "GET",
             headers: {
