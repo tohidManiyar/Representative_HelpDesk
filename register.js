@@ -52,7 +52,7 @@ registerForm.addEventListener("submit", async (e) => {
   }
 
   try {
-    const response = await fetch("https://representative-helpdesk.onrender.com/api/user/register", {
+    const response = await fetch("https://representative-helpdesk-3alv.onrender.com/api/user/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
