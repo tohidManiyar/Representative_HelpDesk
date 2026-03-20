@@ -116,7 +116,7 @@ if (assignedTable) {
 
       try {
         const response = await fetch(
-          `https://representative-helpdesk.onrender.com/api/enquiry/update-status/${ticketId}`,
+          `https://representative-helpdesk-3alv.onrender.com/api/enquiry/update-status/${ticketId}`,
           {
             method: "PUT",
             headers: {
@@ -212,7 +212,7 @@ async function loadAssignedTickets() {
   }
 
   try {
-    const response = await fetch("https://representative-helpdesk.onrender.com/api/enquiry/user", {
+    const response = await fetch("https://representative-helpdesk-3alv.onrender.com/api/enquiry/user", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${token}`,
@@ -299,7 +299,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       try {
         const response = await fetch(
-          "https://representative-helpdesk.onrender.com/api/enquiry/create",
+          "https://representative-helpdesk-3alv.onrender.com/api/enquiry/create",
           {
             method: "POST",
             headers: {
@@ -339,7 +339,7 @@ async function loadUserStats() {
   if (!token) return;
 
   try {
-    const response = await fetch("https://representative-helpdesk.onrender.com/api/enquiry/stats", {
+    const response = await fetch("https://representative-helpdesk-3alv.onrender.com/api/enquiry/stats", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${token}`,
